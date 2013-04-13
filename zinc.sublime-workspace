@@ -1,0 +1,2165 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"video-con",
+				"video-controls"
+			],
+			[
+				"vide",
+				"video-controls"
+			],
+			[
+				"vi",
+				"video-container"
+			],
+			[
+				"video",
+				"video-title"
+			],
+			[
+				"text",
+				"text	text-shadow: color-rgb x y blur"
+			],
+			[
+				"o",
+				"object"
+			],
+			[
+				"mo",
+				"moveCurrencyBeforeAmountInput"
+			],
+			[
+				"M",
+				"MoneyFormatter"
+			],
+			[
+				"up",
+				"upload_preview"
+			],
+			[
+				"tool",
+				"border-bottom-color"
+			],
+			[
+				"on",
+				"onAttached"
+			],
+			[
+				"us",
+				"user_country"
+			],
+			[
+				"is",
+				"isAnyBrandShown"
+			],
+			[
+				"mess",
+				"message_key"
+			],
+			[
+				"map",
+				"map_message"
+			],
+			[
+				"ins",
+				"instrumentsArray"
+			],
+			[
+				"subm",
+				"submitButtonState"
+			],
+			[
+				"laun",
+				"launchSendMoney"
+			],
+			[
+				"build",
+				"build_money_transfer_preview"
+			],
+			[
+				"pr",
+				"promotions"
+			],
+			[
+				"csv",
+				"csv_parse"
+			],
+			[
+				"loca",
+				"local_config_path"
+			],
+			[
+				"regis",
+				"registered_email"
+			],
+			[
+				"initi",
+				"initialize"
+			],
+			[
+				"pro",
+				"promos"
+			],
+			[
+				"promo",
+				"promotion"
+			],
+			[
+				"C",
+				"CommonView"
+			],
+			[
+				"fee",
+				"fee_string"
+			],
+			[
+				"ch",
+				"checkFee"
+			],
+			[
+				"mone",
+				"money_transfer"
+			],
+			[
+				"succes",
+				"successfully"
+			],
+			[
+				"succ",
+				"success"
+			],
+			[
+				"inp",
+				"initInputRestriction"
+			],
+			[
+				"curr",
+				"currentModal"
+			],
+			[
+				"rend",
+				"renderModelViews"
+			],
+			[
+				"rnder",
+				"renderModelViews"
+			],
+			[
+				"model",
+				"modelViews"
+			],
+			[
+				"onRe",
+				"onReset"
+			],
+			[
+				"moda",
+				"modal_path"
+			],
+			[
+				"view",
+				"view_name"
+			],
+			[
+				"cl",
+				"closeModal"
+			],
+			[
+				"err",
+				"errorThrown"
+			],
+			[
+				"destroy",
+				"destroyable"
+			],
+			[
+				"t",
+				"type"
+			],
+			[
+				"lo",
+				"log	log"
+			],
+			[
+				"mode",
+				"modelView"
+			],
+			[
+				"bt",
+				"bt	border-top"
+			],
+			[
+				"b",
+				"bs	border-style: groove"
+			],
+			[
+				"text-",
+				"text-shadow"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"web",
+				"webkit-border-image"
+			],
+			[
+				"btc",
+				"btc	border-top-color: hex"
+			],
+			[
+				"main",
+				"main-background-color"
+			],
+			[
+				"too",
+				"toolbar-dark-color"
+			],
+			[
+				"tog",
+				"toggleable"
+			],
+			[
+				"colo",
+				"color	color: hex"
+			],
+			[
+				"fl",
+				"fl	float: none"
+			],
+			[
+				"mw",
+				"mw	max-width: length"
+			],
+			[
+				"Lu",
+				"\"Lucida Sans\""
+			],
+			[
+				"to",
+				"toggleable"
+			],
+			[
+				"togg",
+				"toggled-on"
+			],
+			[
+				"bw",
+				"bw	border-width: all"
+			],
+			[
+				"ass",
+				"assert_equal"
+			],
+			[
+				"res",
+				"respond"
+			],
+			[
+				"sele",
+				"select2-search-field"
+			],
+			[
+				"a",
+				"arguments"
+			],
+			[
+				"ci",
+				"city_ids"
+			],
+			[
+				"state",
+				"state_ids"
+			],
+			[
+				"lca",
+				"location_ids"
+			],
+			[
+				"location",
+				"location_ids"
+			],
+			[
+				"strin",
+				"stringified_state_ids"
+			],
+			[
+				"gr",
+				"grayLight"
+			],
+			[
+				"10px",
+				"10px"
+			],
+			[
+				"select2-s",
+				"select2-search-choice"
+			],
+			[
+				"se",
+				"select2-choices"
+			],
+			[
+				"min",
+				"minSelectionSize"
+			],
+			[
+				"s",
+				"selection"
+			],
+			[
+				"sub",
+				"subscribe"
+			],
+			[
+				"p",
+				"progress"
+			],
+			[
+				"file",
+				"fileupload"
+			],
+			[
+				"pre",
+				"progress"
+			],
+			[
+				"l",
+				"location_radio"
+			],
+			[
+				"countr",
+				"country_id"
+			],
+			[
+				"coun",
+				"country_id"
+			],
+			[
+				"des",
+				"destroy_all"
+			],
+			[
+				"do",
+				"dob	Insert do |variable| … end"
+			],
+			[
+				"camp",
+				"campaign"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"rem",
+				"removeClass"
+			],
+			[
+				"indi",
+				"individuelle"
+			],
+			[
+				"campa",
+				"campaigns"
+			],
+			[
+				"g",
+				"grayDarker"
+			],
+			[
+				"icon",
+				"icon-comment"
+			],
+			[
+				"pa",
+				"parseInt"
+			],
+			[
+				"max",
+				"max_price_cpm"
+			],
+			[
+				"budg",
+				"budget_limit"
+			],
+			[
+				"add",
+				"add_from_saved_zip"
+			],
+			[
+				"zip",
+				"zipcodes"
+			],
+			[
+				"admin",
+				"administration"
+			],
+			[
+				"number",
+				"numberToHuman"
+			],
+			[
+				"outline",
+				"outline-color"
+			],
+			[
+				"pad",
+				"padding	padding: V H"
+			],
+			[
+				"sc",
+				"scrollToElement"
+			],
+			[
+				"assi",
+				"assign_attributes"
+			],
+			[
+				"budget",
+				"budget_limit"
+			],
+			[
+				"bud",
+				"budget_limit_allowed"
+			],
+			[
+				"upda",
+				"update_attribute"
+			],
+			[
+				"ca",
+				"calculate_campaign_values"
+			],
+			[
+				"ran",
+				"randomString"
+			],
+			[
+				"mob",
+				"mobile_os_errors"
+			],
+			[
+				"mobile",
+				"mobile_os_errors"
+			],
+			[
+				"mobil",
+				"mobile_os_errors"
+			],
+			[
+				"chooser",
+				"zipcode_chooser"
+			],
+			[
+				"find",
+				"find_by_id"
+			],
+			[
+				"choo",
+				"zipcode_chooser"
+			],
+			[
+				"zipc",
+				"zipcode"
+			],
+			[
+				"get",
+				"getZipInfo"
+			],
+			[
+				"append",
+				"append_option"
+			],
+			[
+				"op",
+				"options"
+			],
+			[
+				"set",
+				"set_percentage"
+			],
+			[
+				"sa",
+				"saved_zipcodes"
+			],
+			[
+				"zipcode",
+				"zipcode_chooser"
+			],
+			[
+				"im",
+				"image_upload_height"
+			],
+			[
+				"he",
+				"headline-small"
+			],
+			[
+				"head",
+				"headline-big"
+			],
+			[
+				"c",
+				"c	color: hex"
+			],
+			[
+				"marg",
+				"margin	margin: V H"
+			],
+			[
+				"padd",
+				"padding	padding: V H"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 207.0,
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"check",
+				"Git: Checkout Current File"
+			],
+			[
+				"bl",
+				"Git: Blame"
+			],
+			[
+				"bla",
+				"Git: Blame"
+			],
+			[
+				"ceck",
+				"Git: Checkout Current File"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"coff",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"cop",
+				"Copy File Path"
+			],
+			[
+				"tr",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"graph",
+				"Git: Graph Current File"
+			],
+			[
+				"all",
+				"File: Close All"
+			],
+			[
+				"gitgr",
+				"Git: Graph All"
+			],
+			[
+				"chec",
+				"Git: Checkout Current File"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"git:",
+				"Git: Graph Current File"
+			],
+			[
+				"his",
+				"Git: Commit history"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"diff",
+				"Git: Diff Current File"
+			],
+			[
+				"cl all",
+				"Bookmarks: Clear All"
+			],
+			[
+				"chekc",
+				"Git: Checkout Current File"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"gist",
+				"Gist: Create Private Gist"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"linter dis",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"linter",
+				"SublimeLinter: Reset"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"copy",
+				"Copy File Path"
+			],
+			[
+				"packa con",
+				"Package Control: Discover Packages"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"yml",
+				"Set Syntax: YAML"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"dis",
+				"Package Control: Discover Packages"
+			],
+			[
+				"disabl",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"sub lin",
+				"SublimeLinter: Reset"
+			],
+			[
+				"sublimelinter",
+				"SublimeLinter: Lint Current File"
+			],
+			[
+				"inst pack",
+				"Package Control: Install Package"
+			],
+			[
+				"subl lin",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"disc",
+				"Package Control: Discover Packages"
+			],
+			[
+				"pack ins",
+				"Package Control: Install Package"
+			],
+			[
+				"linr",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"save all",
+				"File: Save All"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"bls",
+				"Snippet: class BlankSlate .. initialize .. end"
+			],
+			[
+				"cl",
+				"File: Close All"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"close all",
+				"File: Close All"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"Live CSS: Colorize"
+			],
+			[
+				"unco",
+				"Live CSS: Uncolorize"
+			],
+			[
+				"live",
+				"Live CSS: Colorize"
+			],
+			[
+				"ave",
+				"File: Save All"
+			],
+			[
+				"sass",
+				"Set Syntax: Ruby Sass"
+			],
+			[
+				"min",
+				"View: Toggle Minimap"
+			],
+			[
+				"lice",
+				"Live CSS: Colorize"
+			],
+			[
+				"ive",
+				"Snippet: vertical-align: type"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"color",
+				"Live CSS: Colorize"
+			],
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"book",
+				"Bookmarks: Clear All"
+			],
+			[
+				"togg",
+				"Bookmarks: Toggle"
+			],
+			[
+				"next",
+				"Bookmarks: Select Next"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"clos ",
+				"File: Close All"
+			],
+			[
+				"hist",
+				"Git: Commit history"
+			],
+			[
+				"rege",
+				"Set Syntax: Regular Expression"
+			],
+			[
+				"colori",
+				"Live CSS: Uncolorize"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"close",
+				"File: Close All"
+			],
+			[
+				"git che",
+				"Git: Checkout Current File"
+			],
+			[
+				"task",
+				"Tasks: New document"
+			],
+			[
+				"hml",
+				"Set Syntax: HTML"
+			],
+			[
+				"rub",
+				"Set Syntax: Ruby"
+			],
+			[
+				"clea",
+				"Bookmarks: Clear All"
+			],
+			[
+				"boo",
+				"Bookmarks: Toggle"
+			],
+			[
+				"displa",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"run",
+				"Coffee: Run Script"
+			],
+			[
+				"coffee",
+				"Coffee: Run Script"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"TR",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"clear",
+				"Bookmarks: Clear All"
+			],
+			[
+				"enc",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"trail",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"disco",
+				"Package Control: Discover Packages"
+			],
+			[
+				"unf",
+				"Code Folding: Unfold All"
+			],
+			[
+				"tag",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"align",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"formjs",
+				"Format: Javascript"
+			],
+			[
+				"fold",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"unfo",
+				"Code Folding: Unfold All"
+			],
+			[
+				"chek",
+				"Git: Checkout Current File"
+			],
+			[
+				"plaintext",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"tag:",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"css colo",
+				"Live CSS: Colorize"
+			],
+			[
+				"gra",
+				"Git: Graph Current File"
+			],
+			[
+				"blame",
+				"Git: Blame"
+			],
+			[
+				"grap",
+				"Git: Graph Current File"
+			],
+			[
+				"git cus",
+				"Git: Custom Command"
+			],
+			[
+				"yaml",
+				"Set Syntax: YAML"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"brows",
+				"Preferences: Browse Packages"
+			],
+			[
+				"text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"mi",
+				"View: Toggle Minimap"
+			],
+			[
+				"aut",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"package control:",
+				"Package Control: Discover Packages"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"trein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"git re",
+				"Git: Reset (unstage) Current File"
+			],
+			[
+				"gb",
+				"Git: Blame"
+			],
+			[
+				"gitbla",
+				"Git: Blame"
+			],
+			[
+				"blam",
+				"Git: Blame"
+			],
+			[
+				"syn rub",
+				"Set Syntax: Ruby"
+			],
+			[
+				"gherk",
+				"Set Syntax: Gherkin"
+			],
+			[
+				"set syn cu",
+				"Set Syntax: Cucumber Steps"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Server…"
+			],
+			[
+				"panel",
+				"SFTP: Show Panel"
+			],
+			[
+				"upl",
+				"SFTP: Upload File"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"map",
+				"View: Toggle Minimap"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"sy html",
+				"Set Syntax: HTML"
+			],
+			[
+				"stat",
+				"View: Toggle Status Bar"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 195.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/brumm/Desktop/FortAwesome-Font-Awesome-13d5dd3/css/font-awesome.min.css",
+		"/Users/brumm/railslove/myskrill/config/routes.rb",
+		"/Users/brumm/railslove/myskrill/app/views/prepaid_cards/new.html.haml",
+		"/Users/brumm/railslove/myskrill/config/locales/cs-CZ.yml",
+		"/Users/brumm/railslove/myskrill/config/locales/es-ES.yml",
+		"/Users/brumm/railslove/myskrill/config/locales/el-GR.yml",
+		"/Users/brumm/railslove/myskrill/skrill.sublime-project",
+		"/Users/brumm/railslove/myskrill/config/locales/en-US.yml",
+		"/Users/brumm/railslove/myskrill/.gitignore",
+		"/Users/brumm/railslove/myskrill/app/controllers/user_settings_controller.rb",
+		"/Users/brumm/railslove/myskrill/app/views/cookies/index.html.haml",
+		"/Users/brumm/railslove/myskrill/app/models/promotion.rb",
+		"/Users/brumm/railslove/myskrill/app/controllers/cookies_controller.rb",
+		"/Users/brumm/railslove/myskrill/app/controllers/dashboards_controller.rb",
+		"/Users/brumm/railslove/myskrill/app/controllers/transactions_controller.rb",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/views/common_view.coffee",
+		"/Users/brumm/railslove/myskrill/app/decorators/fund_upload_option_decorator.rb",
+		"/Users/brumm/railslove/myskrill/app/assets/stylesheets/application.scss",
+		"/Users/brumm/railslove/myskrill/Gemfile.lock",
+		"/Users/brumm/railslove/myskrill/app/decorators/manual_bank_upload_decorator.rb",
+		"/Users/brumm/railslove/myskrill/app/views/fund_uploads/new.html.haml",
+		"/Users/brumm/railslove/myskrill/app/views/fund_uploads/_amount_table.html.haml",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/views/rails/bases/uploads.coffee",
+		"/Users/brumm/railslove/myskrill/app/views/cft_deposit_verifications/perform.html.haml",
+		"/Users/brumm/railslove/myskrill/app/assets/stylesheets/controllers/transactions.css.scss",
+		"/Users/brumm/railslove/myskrill/app/assets/stylesheets/components/tables.scss",
+		"/Users/brumm/railslove/myskrill/config/locales/en-GB.yml",
+		"/Users/brumm/railslove/myskrill/app/views/fund_uploads/manual_bank_uploads/_manual_bank_upload_option.html.haml",
+		"/Users/brumm/railslove/myskrill/app/assets/stylesheets/controllers/fund_uploads.css.scss",
+		"/Users/brumm/railslove/myskrill/app/views/fund_uploads/_fees_table.html.haml",
+		"/Users/brumm/railslove/myskrill/app/controllers/cft_deposit_verifications_controller.rb",
+		"/Users/brumm/railslove/myskrill/app/models/cft_deposit_verification.rb",
+		"/Users/brumm/railslove/myskrill/app/views/fund_uploads/credit_card_uploads/steps/1.html.haml",
+		"/Users/brumm/railslove/myskrill/app/views/payment_cards/verify_new.html.haml",
+		"/Users/brumm/railslove/myskrill/app/views/fund_withdrawals/verifications/verification_fee.html.haml",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/helpers.coffee",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/templates/fees_table.hamlc",
+		"/Users/brumm/railslove/myskrill/app/views/password_resets/credit_card_verification.html.haml",
+		"/Users/brumm/railslove/myskrill/app/views/postal_address_verifications/_verification_form.html.haml",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/models/postal_address_verifier.coffee",
+		"/Users/brumm/railslove/myskrill/app/views/postal_address_verifications/edit.html.haml",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/views/rails/fund_uploads.coffee",
+		"/Users/brumm/railslove/myskrill/app/views/fund_withdrawals/steps/1.html.haml",
+		"/Users/brumm/railslove/myskrill/app/decorators/fund_upload_decorator.rb",
+		"/Users/brumm/railslove/myskrill/app/views/money_transfers/_step1.html.haml",
+		"/Users/brumm/railslove/myskrill/app/models/password_reset.rb",
+		"/Users/brumm/railslove/myskrill/app/controllers/password_resets_controller.rb",
+		"/Users/brumm/railslove/myskrill/app/models/money_formatter.rb",
+		"/Users/brumm/railslove/myskrill/app/decorators/money_transfer/preview_decorator.rb",
+		"/Users/brumm/railslove/myskrill/app/views/password_resets/verify.html.haml",
+		"/Users/brumm/railslove/myskrill/app/views/password_resets/change.html.haml",
+		"/Users/brumm/railslove/myskrill/app/views/password_resets/create.html.haml",
+		"/Users/brumm/railslove/myskrill/app/assets/stylesheets/components/tooltips.scss",
+		"/Users/brumm/railslove/myskrill/app/controllers/password_resets/phone_number_verifications_controller.rb",
+		"/Users/brumm/railslove/myskrill/app/views/password_resets/new.html.haml",
+		"/Users/brumm/railslove/myskrill/app/assets/stylesheets/controllers/prepaid_cards.css.scss",
+		"/Users/brumm/railslove/myskrill/app/decorators/prepaid_card_decorator.rb",
+		"/Users/brumm/railslove/myskrill/app/views/prepaid_cards/show.html.haml",
+		"/Users/brumm/railslove/myskrill/app/views/fund_uploads/redirection.html.haml",
+		"/Users/brumm/railslove/myskrill/Gemfile",
+		"/Users/brumm/railslove/myskrill/app/views/transactions/_filters.html.haml",
+		"/Users/brumm/railslove/myskrill/app/views/prepaid_cards/_limits.html.haml",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/views/rails/transactions.coffee",
+		"/Users/brumm/railslove/myskrill/app/controllers/user_authentications_controller.rb",
+		"/Users/brumm/railslove/myskrill/app/assets/stylesheets/controllers/prepaid_card.scss",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/views/modals/base.coffee",
+		"/Users/brumm/railslove/myskrill/app/helpers/user_registration_helper.rb",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/views/modals/payment_instruments/verify_bank_account.coffee",
+		"/Users/brumm/railslove/myskrill/config/config.yml",
+		"/Users/brumm/railslove/myskrill/app/controllers/application_controller.rb",
+		"/Users/brumm/railslove/myskrill/app/controllers/controller_extensions/user_session_manager.rb",
+		"/Users/brumm/railslove/myskrill/app/models/internal_redirection.rb",
+		"/Users/brumm/Desktop/en-GB.csv",
+		"/Users/brumm/railslove/myskrill/app/views/bank_account_verifications/new.html.haml",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/views/modals/payment_instruments/add_card.coffee",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/views/modals/postal_address_verifications/new.coffee",
+		"/Users/brumm/railslove/myskrill/app/assets/stylesheets/controllers/user_settings.css.scss",
+		"/Users/brumm/railslove/myskrill/app/views/user_registrations/new.html.haml",
+		"/Users/brumm/railslove/myskrill/app/views/dashboards/_account_overview.html.haml",
+		"/Users/brumm/railslove/myskrill/app/assets/stylesheets/controllers/user_registrations.css.scss",
+		"/Users/brumm/railslove/myskrill/spec/requests/jasmine_spec.rb",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/views/modals/payment_instruments/add_bank_account.coffee",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/views/rails/user_settings.coffee",
+		"/Users/brumm/railslove/myskrill/app/views/phones/_accordion.html.haml",
+		"/Users/brumm/railslove/myskrill/app/controllers/email_address_verifications_controller.rb",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/views/rails/payment_instruments.coffee",
+		"/Users/brumm/railslove/myskrill/lib/master_server/mappers/email_address_verification.rb",
+		"/Users/brumm/railslove/myskrill/app/views/shared/_promotion.html.haml",
+		"/Users/brumm/Desktop/ger.csv",
+		"/Users/brumm/railslove/myskrill/lib/tasks/backup.rake",
+		"/Users/brumm/railslove/myskrill/app/controllers/controller_extensions/communication_presenter.rb",
+		"/Users/brumm/Dropbox/Public/promos/en.csv",
+		"/Users/brumm/railslove/myskrill/app/assets/stylesheets/controllers/dashboard.css.scss",
+		"/Users/brumm/railslove/myskrill/app/views/prepaid_cards/_menu.html.haml",
+		"/Users/brumm/railslove/myskrill/app/controllers/controller_extensions/flash_messages_to_gon_data_converter.rb",
+		"/Users/brumm/railslove/myskrill/app/views/phones/_form.html.haml",
+		"/Users/brumm/railslove/myskrill/app/views/user_authentications/_form.html.haml",
+		"/Users/brumm/Library/Application Support/Sublime Text 2/Packages/Git/Git.sublime-settings",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/views/rails/user_authentications.coffee",
+		"/Users/brumm/railslove/myskrill/lib/master_server/mappers/money_transfer/on_get_preview_error.rb",
+		"/Users/brumm/railslove/myskrill/config/locales/en.yml",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/application.coffee",
+		"/Users/brumm/railslove/myskrill/lib/master_server/errors/money_transfer/on_get_preview.rb",
+		"/Users/brumm/railslove/myskrill/lib/server/http.rb",
+		"/Users/brumm/railslove/myskrill/lib/master_server/mappers/fund_withdrawal/on_create_error.rb",
+		"/Users/brumm/railslove/myskrill/lib/master_server/mappers/fund_upload/on_create_error.rb",
+		"/Users/brumm/railslove/myskrill/app/views/user_authentications/_captcha.html.haml",
+		"/Users/brumm/railslove/myskrill/app/controllers/money_transfer_previews_controller.rb",
+		"/Users/brumm/railslove/myskrill/app/models/money_transfer/preview.rb",
+		"/Users/brumm/railslove/myskrill/lib/master_server/errors/money_transfer/on_get_fee.rb",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/views/modals/money_transfers/new.coffee",
+		"/Users/brumm/railslove/myskrill/app/controllers/money_transfer_preview_controller.rb",
+		"/Users/brumm/railslove/myskrill/app/controllers/money_transfer_fees_controller.rb",
+		"/Users/brumm/railslove/myskrill/app/helpers/application_helper.rb",
+		"/Users/brumm/railslove/myskrill/app/views/layouts/application.html.haml",
+		"/Users/brumm/railslove/myskrill/config/sec_config.yml",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/views/collections_view.coffee",
+		"/Users/brumm/railslove/myskrill/app/models/support/user_authentication.rb",
+		"/Users/brumm/railslove/myskrill/config/locales/bg-BG.yml",
+		"/Users/brumm/Dropbox/Skrill/My Account/Promotions/en.csv",
+		"/Users/brumm/railslove/myskrill/app/models/money_transfer.rb",
+		"/Users/brumm/railslove/myskrill/app/controllers/money_transfers_controller.rb",
+		"/Users/brumm/railslove/myskrill/app/controllers/controller_extensions/modal_controller.rb",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/collections/alerts.coffee",
+		"/Users/brumm/railslove/myskrill/app/models/support/base.rb",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/models/alert.coffee",
+		"/Users/brumm/railslove/myskrill/vendor/assets/javascripts/backbone.localStorage.js",
+		"/Users/brumm/railslove/myskrill/app/assets/javascripts/views/models_view.coffee"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"*.yml",
+			"",
+			"*.rb",
+			"*.scss",
+			"*.yml",
+			"*.rb",
+			"*.haml",
+			"",
+			"*.scss",
+			"*.rb",
+			"*.scss",
+			"*.yml",
+			"*.rb",
+			"*.haml",
+			"*.scss",
+			"*.yml",
+			"*.rb",
+			"*.yml",
+			"*.haml",
+			"*.yml",
+			"*.scss",
+			"*.haml",
+			"",
+			"*.rb",
+			"*.haml",
+			"*.scss",
+			"*.coffee",
+			"",
+			"*.coffee",
+			"*.scss",
+			"*.coffee",
+			"*.scss",
+			"",
+			"*.rb",
+			"*.coffee",
+			"",
+			"*.haml",
+			"*.rb",
+			"",
+			"*.scss",
+			"",
+			"*.rb",
+			"*.yml",
+			"*.coffee",
+			"*.rb",
+			"",
+			"*.coffee",
+			"",
+			"*.",
+			"*.haml",
+			"",
+			"*.coffee",
+			"*.scss",
+			"*.rb",
+			"*.coffee",
+			"",
+			"*.haml",
+			"*.rb",
+			"",
+			"*.coffee",
+			"",
+			"*.haml",
+			"",
+			"*.coffee",
+			"*.js",
+			"",
+			"*.rb",
+			"*.haml",
+			"",
+			"*.rb",
+			"",
+			"*.rb",
+			"*.scss",
+			"",
+			"*.rb",
+			"",
+			"*.rb",
+			"",
+			"*.haml",
+			"",
+			"*.coffee",
+			"",
+			"*.haml",
+			"",
+			"*.rb",
+			"",
+			"*.rb",
+			"*.coffee",
+			"*.rb",
+			"*.haml",
+			"*.scss",
+			"*.rb",
+			"*.scss",
+			"*.haml",
+			"*.scss",
+			"*.rb",
+			"",
+			"*.yml",
+			"*.yaml",
+			"*.scss",
+			"*.coffee",
+			"*.coffe",
+			"*.scss",
+			"",
+			"*.coffee",
+			"",
+			"*.rb",
+			"*.coffee",
+			"*.haml",
+			"",
+			"*.rb",
+			"",
+			"*.coffee",
+			"",
+			"*.scss",
+			"",
+			"*.scss",
+			"*.rb",
+			"*.coffee",
+			"*.rb",
+			"",
+			"*.coffee",
+			"",
+			"*.coffee",
+			"",
+			"*.scss",
+			"",
+			"*.rb"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"div",
+			"#f0f0ed",
+			"red",
+			"inherit",
+			"#f0f0ed",
+			"asdf",
+			"video-container",
+			"fafafa",
+			"user",
+			"0",
+			"up",
+			"top",
+			"cont",
+			"controls",
+			"video-controls",
+			"0",
+			"progress",
+			"10px",
+			"100",
+			"0",
+			"title",
+			"0",
+			"05",
+			"80c3d3",
+			"788eae",
+			"fafafa",
+			"div",
+			"fafafa",
+			"c4eca3",
+			"dddeee",
+			"Login",
+			"style",
+			"fafafa",
+			"960px",
+			"menu-container",
+			"Zinctub",
+			"255",
+			"div",
+			"stroke",
+			"fafafa",
+			"25272a",
+			"bla",
+			"chat",
+			"white",
+			"0",
+			"1px",
+			"px",
+			"top",
+			"0",
+			"asd",
+			"padding",
+			"border",
+			"green",
+			"dmy:",
+			"Υ",
+			"dmy:",
+			"%Υ",
+			"key",
+			"trans",
+			"promotions",
+			"promos",
+			"sanity_check",
+			"csv_object",
+			"locale",
+			"filter_excluded_countries",
+			"csv_object",
+			"%w{",
+			"%{",
+			"object",
+			"44f2c13eee465f141545ada9f36790f3aa4a0a42",
+			".table",
+			"days_3_5",
+			"def processing_details",
+			"customer_currency",
+			"9a1dec502b5eab3070179e985ae8663cff72b4b7",
+			"6718ec0e163c0cb00170a354344d520bfbab8976",
+			"cvv",
+			"cvv_length",
+			"CftDepositVerification",
+			":cvv",
+			"cvv_length",
+			"size",
+			"bef13dda8c5da36b54b2ec3c026fee2c244a49b0",
+			"length",
+			"wrongAmount",
+			"requireAmount",
+			"fee_am",
+			"amount",
+			"fee_amoun",
+			"cvv",
+			"ccv",
+			".header",
+			"upload_preview",
+			"provider_currency",
+			"customer_currency",
+			"MoneyFormatter",
+			" currency: ",
+			"currency: ",
+			"false",
+			"customer_currency",
+			"def customer_currency",
+			"amount_without_currency",
+			"amount_with_currency",
+			"amount_without_currency",
+			"7430e33b36b06e9c71d7b17282b0347428e6753b",
+			"b {",
+			"fx_fees_note_2",
+			"m(",
+			"def max_amount",
+			"table",
+			"hint",
+			"gaming_notice",
+			"offset",
+			"push",
+			"amount-table",
+			"select_another_instrument",
+			"gaming_notice",
+			"amount_label",
+			"surround",
+			"su",
+			"tool",
+			"7430e33b36b06e9c71d7b17282b0347428e6753b",
+			"94a157f6f0b6a379e0103aaf21b6568b143ec81e",
+			"confirma",
+			"Does not match confirmation",
+			"tooltip_tag",
+			".inputs-inline",
+			"tooltip_tag"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			") ->",
+			") =>",
+			"#",
+			"success",
+			"#ad-cropper-container",
+			"#ad-cropper",
+			"wrap_if_error",
+			"%h2= t",
+			".wizard.row",
+			"\"",
+			"'",
+			"topics",
+			"self_and_children_by_radius",
+			"'",
+			"brumm",
+			"\"",
+			" ",
+			"width=\"100%\"",
+			"index.job_postings._index.publish_date",
+			"#sort_offers_by",
+			"",
+			"// $1",
+			"",
+			"image-url(\"",
+			" url(\"/PIE.htc\")",
+			" image-url(\"$1\")",
+			"%script{:type => \"text/javascript\", :src => \"http://connect.facebook.net/de_DE/all.js\"}",
+			"",
+			" image-url(\"$1\")",
+			"%script{:type => \"text/javascript\", :src => \"http://connect.facebook.net/de_DE/all.js\"}",
+			"/PIE.htc",
+			"",
+			"/QQQ\\n/$0",
+			"#QQQ\\n#$0",
+			"",
+			"# $0",
+			"",
+			"defaults.to_h.merge",
+			"defaults.merge.to_h",
+			"",
+			":",
+			"anonymous+$1@",
+			"anonymous+$1",
+			"",
+			"\n",
+			"",
+			"'",
+			"\"subreddit\"",
+			"\"levenshtein\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 44.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 37.0
+	},
+	"output.find_results":
+	{
+		"height": 414.0
+	},
+	"output.git":
+	{
+		"height": 152.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 188.0
+	},
+	"output.sftp":
+	{
+		"height": 118.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 342.0
+	},
+	"replace":
+	{
+		"height": 78.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"prepnew",
+				"app/views/prepaid_cards/new.html.haml"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"eses",
+				"config/locales/es-ES.yml"
+			],
+			[
+				"locale.yml",
+				"config/locales/es-ES.yml"
+			],
+			[
+				"poj",
+				"skrill.sublime-project"
+			],
+			[
+				"enus",
+				"config/locales/en-US.yml"
+			],
+			[
+				"settcon",
+				"app/controllers/user_settings_controller.rb"
+			],
+			[
+				"cookiesinde",
+				"app/views/cookies/index.html.haml"
+			],
+			[
+				"cookies",
+				"app/controllers/cookies_controller.rb"
+			],
+			[
+				"dascon",
+				"app/controllers/dashboards_controller.rb"
+			],
+			[
+				"promo",
+				"app/models/promotion.rb"
+			],
+			[
+				"lock",
+				"Gemfile.lock"
+			],
+			[
+				"appcss",
+				"app/assets/stylesheets/application.scss"
+			],
+			[
+				"fuupnew",
+				"app/views/fund_uploads/new.html.haml"
+			],
+			[
+				"manualham",
+				"app/views/fund_uploads/manual_bank_uploads/_manual_bank_upload_option.html.haml"
+			],
+			[
+				"comm",
+				"app/assets/javascripts/views/common_view.coffee"
+			],
+			[
+				"funcss",
+				"app/assets/stylesheets/controllers/fund_uploads.css.scss"
+			],
+			[
+				"fundamount",
+				"app/views/fund_uploads/_amount_table.html.haml"
+			],
+			[
+				"upl",
+				"app/assets/javascripts/views/rails/bases/uploads.coffee"
+			],
+			[
+				"cftdepositverification",
+				"app/models/cft_deposit_verification.rb"
+			],
+			[
+				"cardver",
+				"app/views/password_resets/credit_card_verification.html.haml"
+			],
+			[
+				"postadd",
+				"app/assets/javascripts/models/postal_address_verifier.coffee"
+			],
+			[
+				"uploadcoff",
+				"app/assets/javascripts/views/rails/bases/uploads.coffee"
+			],
+			[
+				"fundupcoff",
+				"app/assets/javascripts/views/rails/fund_uploads.coffee"
+			],
+			[
+				"hamlc",
+				"app/assets/javascripts/templates/fees_table.hamlc"
+			],
+			[
+				"fund_uploads/credit_card_uploads/steps/1.html.haml",
+				"app/views/fund_uploads/credit_card_uploads/steps/1.html.haml"
+			],
+			[
+				"funduplonewhaml",
+				"app/views/fund_uploads/new.html.haml"
+			],
+			[
+				"1haml",
+				"app/views/fund_withdrawals/steps/1.html.haml"
+			],
+			[
+				"helper",
+				"app/assets/javascripts/helpers.coffee"
+			],
+			[
+				"feehaml",
+				"app/assets/javascripts/templates/fees_table.hamlc"
+			],
+			[
+				"moneyform",
+				"app/models/money_formatter.rb"
+			],
+			[
+				"appcs",
+				"app/assets/stylesheets/application.scss"
+			],
+			[
+				"fundupnew",
+				"app/views/fund_uploads/new.html.haml"
+			],
+			[
+				"moneytranshaml",
+				"app/views/money_transfers/_step1.html.haml"
+			],
+			[
+				"fees_table",
+				"app/assets/javascripts/templates/fees_table.hamlc"
+			],
+			[
+				"fund_uploads/amount_table",
+				"app/views/fund_uploads/_amount_table.html.haml"
+			],
+			[
+				"credupst",
+				"app/views/fund_uploads/credit_card_uploads/steps/1.html.haml"
+			],
+			[
+				"passrese",
+				"app/models/password_reset.rb"
+			],
+			[
+				"passrescon",
+				"app/controllers/password_resets_controller.rb"
+			],
+			[
+				"passhaml",
+				"app/views/password_resets/verify.html.haml"
+			],
+			[
+				"passcrea",
+				"app/views/password_resets/create.html.haml"
+			],
+			[
+				"passwhaml",
+				"app/views/password_resets/change.html.haml"
+			],
+			[
+				"phonenumberver",
+				"app/controllers/password_resets/phone_number_verifications_controller.rb"
+			],
+			[
+				"passresecon",
+				"app/controllers/password_resets_controller.rb"
+			],
+			[
+				"passnew",
+				"app/views/password_resets/new.html.haml"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"filter",
+				"app/views/transactions/_filters.html.haml"
+			],
+			[
+				"userauthcon",
+				"app/controllers/user_authentications_controller.rb"
+			],
+			[
+				"prepscss",
+				"app/assets/stylesheets/controllers/prepaid_cards.css.scss"
+			],
+			[
+				"transcss",
+				"app/assets/stylesheets/controllers/transactions.css.scss"
+			],
+			[
+				"transscss",
+				"app/assets/stylesheets/controllers/transactions.css.scss"
+			],
+			[
+				"basecoff",
+				"app/assets/javascripts/views/modals/base.coffee"
+			],
+			[
+				"transactioncoff",
+				"app/assets/javascripts/views/rails/transactions.coffee"
+			],
+			[
+				"postadvercoff",
+				"app/assets/javascripts/models/postal_address_verifier.coffee"
+			],
+			[
+				"con",
+				"config/config.yml"
+			],
+			[
+				"internalred",
+				"app/models/internal_redirection.rb"
+			],
+			[
+				"appcon",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"dashcon",
+				"app/controllers/dashboards_controller.rb"
+			],
+			[
+				"authcon",
+				"app/controllers/user_authentications_controller.rb"
+			],
+			[
+				"engb",
+				"config/locales/en-GB.yml"
+			],
+			[
+				"verbacoff",
+				"app/assets/javascripts/views/modals/payment_instruments/verify_bank_account.coffee"
+			],
+			[
+				"addcard",
+				"app/assets/javascripts/views/modals/payment_instruments/add_card.coffee"
+			],
+			[
+				"baseoff",
+				"app/assets/javascripts/views/modals/base.coffee"
+			],
+			[
+				"helpers",
+				"app/assets/javascripts/helpers.coffee"
+			],
+			[
+				"postaladdvercoff",
+				"app/assets/javascripts/models/postal_address_verifier.coffee"
+			],
+			[
+				"userregnew",
+				"app/views/user_registrations/new.html.haml"
+			],
+			[
+				"proj",
+				"skrill.sublime-project"
+			],
+			[
+				"dashover",
+				"app/views/dashboards/_account_overview.html.haml"
+			],
+			[
+				"phones/_accordion.html.haml",
+				"app/views/phones/_accordion.html.haml"
+			],
+			[
+				"usersett",
+				"app/assets/javascripts/views/rails/user_settings.coffee"
+			],
+			[
+				"verifbankacc",
+				"app/assets/javascripts/views/modals/payment_instruments/verify_bank_account.coffee"
+			],
+			[
+				"addbank",
+				"app/assets/javascripts/views/modals/payment_instruments/add_bank_account.coffee"
+			],
+			[
+				"payinscoff",
+				"app/assets/javascripts/views/rails/payment_instruments.coffee"
+			],
+			[
+				"jasm",
+				"spec/requests/jasmine_spec.rb"
+			],
+			[
+				"emailaddressverif",
+				"lib/master_server/mappers/email_address_verification.rb"
+			],
+			[
+				"usersettcoff",
+				"app/assets/javascripts/views/rails/user_settings.coffee"
+			],
+			[
+				"app/controllers/email_address_verifications_controller.rb",
+				"app/controllers/email_address_verifications_controller.rb"
+			],
+			[
+				"shapro",
+				"app/views/shared/_promotion.html.haml"
+			],
+			[
+				"dashaccover",
+				"app/views/dashboards/_account_overview.html.haml"
+			],
+			[
+				".rake",
+				"lib/tasks/backup.rake"
+			],
+			[
+				"conf",
+				"config/config.yml"
+			],
+			[
+				"gemlo",
+				"Gemfile.lock"
+			],
+			[
+				"app/controllers/controller_extensions/communication_presenter.rb",
+				"app/controllers/controller_extensions/communication_presenter.rb"
+			],
+			[
+				"help",
+				"app/assets/javascripts/helpers.coffee"
+			],
+			[
+				"passresver",
+				"app/views/password_resets/verify.html.haml"
+			],
+			[
+				"passresnew",
+				"app/views/password_resets/new.html.haml"
+			],
+			[
+				"pasrescon",
+				"app/controllers/password_resets_controller.rb"
+			],
+			[
+				"cardnew",
+				"app/views/prepaid_cards/new.html.haml"
+			],
+			[
+				"authform",
+				"app/views/user_authentications/_form.html.haml"
+			],
+			[
+				"app",
+				"app/assets/javascripts/application.coffee"
+			],
+			[
+				"getprev",
+				"lib/master_server/errors/money_transfer/on_get_preview.rb"
+			],
+			[
+				"http",
+				"lib/server/http.rb"
+			],
+			[
+				"en",
+				"config/locales/en.yml"
+			],
+			[
+				"withdrawalerr",
+				"lib/master_server/mappers/fund_withdrawal/on_create_error.rb"
+			],
+			[
+				"oner",
+				"lib/master_server/mappers/fund_upload/on_create_error.rb"
+			],
+			[
+				"previewerr",
+				"lib/master_server/mappers/money_transfer/on_get_preview_error.rb"
+			],
+			[
+				"authcoff",
+				"app/assets/javascripts/views/rails/user_authentications.coffee"
+			],
+			[
+				"onget",
+				"lib/master_server/errors/money_transfer/on_get_preview.rb"
+			],
+			[
+				"ongetpre",
+				"lib/master_server/mappers/money_transfer/on_get_preview_error.rb"
+			],
+			[
+				"modelspreview",
+				"app/models/money_transfer/preview.rb"
+			],
+			[
+				"transpreviewrb",
+				"app/models/money_transfer/preview.rb"
+			],
+			[
+				"prev",
+				"app/models/money_transfer/preview.rb"
+			],
+			[
+				"moneytranscon",
+				"app/controllers/money_transfer_previews_controller.rb"
+			],
+			[
+				"prevcon",
+				"app/controllers/money_transfer_preview_controller.rb"
+			],
+			[
+				"feecon",
+				"app/controllers/money_transfer_fees_controller.rb"
+			],
+			[
+				"transnewcoff",
+				"app/assets/javascripts/views/modals/money_transfers/new.coffee"
+			],
+			[
+				"appham",
+				"app/views/layouts/application.html.haml"
+			],
+			[
+				"userauthcoff",
+				"app/assets/javascripts/views/rails/user_authentications.coffee"
+			],
+			[
+				"collview",
+				"app/assets/javascripts/views/collections_view.coffee"
+			],
+			[
+				"funduploadscoff",
+				"app/assets/javascripts/views/rails/fund_uploads.coffee"
+			],
+			[
+				"userauth",
+				"app/models/support/user_authentication.rb"
+			],
+			[
+				"newcoff",
+				"app/assets/javascripts/views/modals/money_transfers/new.coffee"
+			],
+			[
+				"common",
+				"app/assets/javascripts/views/common_view.coffee"
+			],
+			[
+				"suppobase",
+				"app/models/support/base.rb"
+			],
+			[
+				"moneytrans",
+				"app/models/money_transfer.rb"
+			],
+			[
+				"locals",
+				"vendor/assets/javascripts/backbone.localStorage.js"
+			],
+			[
+				"alerts",
+				"app/assets/javascripts/views/alerts.coffee"
+			],
+			[
+				"step2",
+				"app/views/money_transfers/_step2.html.haml"
+			],
+			[
+				"sec",
+				"config/sec_config.yml"
+			],
+			[
+				"secconfi",
+				"config/sec_config.yml"
+			],
+			[
+				"spec/requests/stale_session_spec.rb",
+				"spec/requests/stale_session_spec.rb"
+			],
+			[
+				"moneytransferfee",
+				"app/controllers/money_transfer_fees_controller.rb"
+			],
+			[
+				"userauth_form",
+				"app/views/user_authentications/_form.html.haml"
+			],
+			[
+				"userauthform",
+				"app/views/user_authentications/_form.html.haml"
+			],
+			[
+				"moneytransfee",
+				"app/controllers/money_transfer_fees_controller.rb"
+			],
+			[
+				"monetransnew",
+				"app/views/money_transfers/new.html.haml"
+			],
+			[
+				"ste2",
+				"app/views/money_transfers/_step2.html.haml"
+			],
+			[
+				"dashcoff",
+				"app/assets/javascripts/views/rails/dashboards.coffee"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"cl all",
+				"/Users/philippbrumm/Code/piwo00tal/piw00tal.sublime-project"
+			],
+			[
+				"sbt",
+				"/Users/brumm/railslove/sbt/sbt.sublime-project"
+			],
+			[
+				"avo",
+				"/Users/philippbrumm/railslove/Avocado/avocado.sublime-project"
+			],
+			[
+				"sb",
+				"/Users/philippbrumm/railslove/sbt/sbt.sublime-project"
+			],
+			[
+				"job",
+				"/Users/philippbrumm/railslove/Jobmensa/Jobmensa.sublime-project"
+			],
+			[
+				"o2s",
+				"/Users/philippbrumm/railslove/o2seller-rails3/nexum.sublime-project"
+			],
+			[
+				"",
+				"/Users/philippbrumm/railslove/o2seller-rails3/nexum.sublime-project"
+			],
+			[
+				"ob",
+				"/Users/philippbrumm/railslove/Jobmensa/Jobmensa.sublime-project"
+			],
+			[
+				"p2",
+				"/Users/philippbrumm/railslove/p2g/p2g.sublime-project"
+			],
+			[
+				"nex",
+				"/Users/philippbrumm/railslove/o2seller-rails3/nexum.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 179.0,
+	"status_bar_visible": true
+}
