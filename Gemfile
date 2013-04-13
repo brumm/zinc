@@ -9,7 +9,8 @@ gem 'sorcery'
 
 gem 'haml-rails'
 gem 'quiet_assets'
-gem 'sass-rails',   '~> 3.2.3'
+gem 'sass-rails', '~> 3.2.3'
+gem 'bourbon'
 gem 'normalize-rails'
 gem 'font-awesome-rails'
 
