@@ -1,3 +1,3 @@
 Zinc::Application.routes.draw do
-  root :to => 'page#landing'
+  root :to => 'pages#landing'
 end
