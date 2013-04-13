@@ -5,8 +5,9 @@ gem 'thin'
 
 gem 'mysql2'
 
-gem 'haml-rails'
+gem 'sorcery'
 
+gem 'haml-rails'
 gem 'quiet_assets'
 gem 'sass-rails',   '~> 3.2.3'
 gem 'normalize-rails'
