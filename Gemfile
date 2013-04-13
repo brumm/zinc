@@ -10,6 +10,7 @@ gem 'haml-rails'
 gem 'quiet_assets'
 gem 'sass-rails',   '~> 3.2.3'
 gem 'normalize-rails'
+gem 'font-awesome-rails'
 
 gem 'coffee-rails', '~> 3.2.1'
 gem 'jquery-rails'
