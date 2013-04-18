@@ -9,9 +9,10 @@
   %body
     .header-container
       .row
-        %span.logo-image
-          = image_tag "zinctub.png"
-        %span.logo-text Zinctub
+        = link_to :root, class: "logo" do
+          %span.logo-image
+            = image_tag "zinctub.png"
+          %span.logo-text Zinctub
 
         .header-actions
           %ul.vertical-action-list
