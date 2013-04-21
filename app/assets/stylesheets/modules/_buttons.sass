@@ -3,16 +3,15 @@
   padding: 6px 10px
   border: none
 
-  &.btn-primary
+
+  &[class*=btn-]
     color: $off-white
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 2px 0 rgba(255, 255, 255, 0.2) inset
     border-radius: 3px
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2)
-    +linear-gradient($bright-blue, darken($bright-blue, 10%))
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2)
+
+  &.btn-primary
+    +linear-gradient($bright-blue, darken($bright-blue, 13%))
 
   &.btn-secondary
-    color: $off-white
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 2px 0 rgba(255, 255, 255, 0.2) inset
-    border-radius: 3px
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2)
     +linear-gradient(lighten($flat-blue, 50%), lighten($flat-blue, 40%))
