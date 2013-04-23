@@ -6,6 +6,8 @@ gem 'thin'
 gem 'mysql2'
 
 gem 'sorcery'
+gem 'friendly_id'
+gem 'roleable'
 
 gem 'haml-rails'
 gem 'quiet_assets'

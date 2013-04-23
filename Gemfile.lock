@@ -58,6 +58,7 @@ GEM
       multipart-post (~> 1.1)
     font-awesome-rails (3.0.2.0)
       railties (>= 3.1)
+    friendly_id (4.0.9)
     haml (4.0.2)
       tilt
     haml-rails (0.4)
@@ -129,6 +130,7 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
+    roleable (0.2.1)
     sass (3.2.7)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -165,6 +167,7 @@ DEPENDENCIES
   bourbon
   coffee-rails (~> 3.2.1)
   font-awesome-rails
+  friendly_id
   haml-rails
   jquery-rails
   mysql2
@@ -173,6 +176,7 @@ DEPENDENCIES
   pry-rails
   quiet_assets
   rails (= 3.2.13)
+  roleable
   sass-rails (~> 3.2.3)
   sorcery
   thin
