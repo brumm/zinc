@@ -1,0 +1,8 @@
+.rooms-container
+  .row
+    .rooms
+      %h1 Rooms
+      %p
+        - if @rooms.any?
+          %ul
+            = render partial: 'room', collection: @rooms

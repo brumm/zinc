@@ -1,5 +1,8 @@
 Zinc::Application.routes.draw do
 
+  resources :rooms
+
+
   resources :user_sessions
   resources :users
 

@@ -1,0 +1,17 @@
+.rooms-container
+  .row
+    .rooms
+      %h1 Room!
+      %p
+        = form_for :room, :url => { :action => :create }, :html => { :class => "form" } do |f|
+          %ul
+            %li
+              = f.text_field :title, :placeholder => "room title"
+            - if @room
+              %li{ data: { error: @room.errors[:slug].join(", ") } }
+                = f.text_field :slug, :placeholder => "room slug"
+            - else
+              %li
+                = f.text_field :slug, :placeholder => "room slug"
+            %li
+              = f.submit "Create!", class: "btn btn-secondary"
