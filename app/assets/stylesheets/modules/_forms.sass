@@ -5,6 +5,24 @@ form > ul
   > li + li
     margin-top: 15px
 
+  > li
+    &[data-hint]:after
+      content: attr(data-hint)
+      color: mix($flat-blue, $light-grey, 40%)
+      -webkit-font-smoothing: antialiased
+      margin-left: 10px
+
+    &[data-error]
+      &:after
+        font-family: "FontAwesome"
+        content: "\f071" " " attr(data-error)
+        color: $dark-red
+        -webkit-font-smoothing: antialiased
+        margin-left: 10px
+      #{$all-text-inputs}
+        box-shadow: 0 0 0 1px $dark-red inset
+
+
   label
     display: block
     min-width: 80px
@@ -14,7 +32,19 @@ form > ul
     color: inherit
     +appearance(none)
     border: none
-    padding: 5px 7px
+    padding: 8px 10px 7px
     background-color: $off-white
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset
     outline: none
+    border-radius: 3px
+    &:focus
+      box-shadow: 0 0 0 1px $bright-blue inset
+
+  input[type=submit]
+    float: right
+
+  ::-webkit-input-placeholder
+    -webkit-font-smoothing: antialiased
+
+// input:-webkit-autofill
+//   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset, 0 0 0 50px $off-white inset !important

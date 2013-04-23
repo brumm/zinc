@@ -1,17 +1,21 @@
 .btn
   display: inline-block
-  padding: 6px 10px
+  padding: 6px 12px
   border: none
-
 
   &[class*=btn-]
     color: $off-white
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 2px 0 rgba(255, 255, 255, 0.2) inset
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 2px 0 rgba(255, 255, 255, 0.25) inset
     border-radius: 3px
     text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2)
 
   &.btn-primary
     +linear-gradient($bright-blue, darken($bright-blue, 13%))
+    +transition (box-shadow 300ms $ease-out-quad)
+    &:hover
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 2px 0 rgba(255, 255, 255, 0.25) inset, 0 5px 20px darken($bright-blue, 13%)
 
   &.btn-secondary
     +linear-gradient(lighten($flat-blue, 50%), lighten($flat-blue, 40%))
+    &:hover
+      +linear-gradient(lighten($flat-blue, 45%), lighten($flat-blue, 35%))
