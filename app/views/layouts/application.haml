@@ -14,6 +14,8 @@
           %span.logo-image
             = image_tag "zinctub.png"
           %span.logo-text Zinctub
+        - if @room
+          %span.room-name= "r/#{@room.slug}"
 
         .header-actions
           %ul.vertical-action-list
