@@ -1,0 +1,64 @@
+.stage-container
+  height: 430px
+  .row
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1)
+    background-color: $off-white
+
+  .video-container
+    height: 100%
+    width: 55.5%
+    position: relative
+    overflow: hidden
+    opacity: 0.3
+
+
+  .chat-container
+    height: 100%
+    width: 44.5%
+    position: relative
+    box-shadow: -1px 0 0 rgba(0, 0, 0, 0.15)
+    &.busy
+      opacity: 0.5
+    .chat
+      list-style-type: none
+      margin: 0
+      padding: 15px
+      height: 90%
+      color: #4d515b
+      font-size: 14px
+      overflow: auto
+      > li + li
+        margin-top: 5px
+      li
+        +clearfix
+        &.status
+          opacity: 0.5
+      a
+        color: inherit
+        max-width: 99%
+        overflow: hidden
+        text-overflow: ellipsis
+        display: inline-block
+        white-space: nowrap
+        &:hover
+          color: #63c6d6
+
+      .name
+        opacity: 0.5
+
+      .name:after
+        content: ":"
+        margin-right: 4px
+
+  #send-message
+    position: absolute
+    bottom: 0
+    left: 0
+    height: 10%
+    width: 100%
+    border: none
+    padding: 0 10px
+    font: inherit
+    font-size: 14px
+    outline: none
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.05), 0 -2px 5px rgba(0, 0, 0, 0.1), 0 -1px 0 #f0f0ed inset
