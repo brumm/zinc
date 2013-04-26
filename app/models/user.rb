@@ -17,4 +17,8 @@ class User < ActiveRecord::Base
     self.has_role? role, instance
   end
 
+  def as_json
+    { name: self.username }
+  end
+
 end
