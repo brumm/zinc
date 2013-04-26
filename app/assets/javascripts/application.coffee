@@ -1,3 +1,8 @@
 #= require jquery
 #= require jquery_ujs
-#= require_tree .
+
+#= require websocket_rails/main
+
+#= require_tree ./models
+#= require_tree ./controllers
+#= require global
