@@ -2,7 +2,6 @@
   background-color: $off-white
   padding: 15px 0
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1)
-  margin-bottom: 45px
 
   .logo
     span
@@ -14,8 +13,15 @@
       font-size: 20px
     .logo-image img
       display: block
+  .room-name
+    padding: 10px 0
+    margin-left: 20px
+    font-size: 20px
 
   .header-actions
     padding: 5px 0
     float: right
     color: mix($flat-blue, $off-white, 40%)
+
+  & + .stage-container
+    padding-top: 45px
