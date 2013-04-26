@@ -4,6 +4,7 @@
     %meta{:charset => "UTF-8"}
     %title Zinctub
     = stylesheet_link_tag "application", :media => "all"
+    = include_gon(:namespace => "Zinc", :init => true)
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
