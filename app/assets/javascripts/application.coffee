@@ -1,8 +1,20 @@
 #= require jquery
 #= require jquery_ujs
 
+#= require hamlcoffee
+#= require_tree ./templates
+
 #= require websocket_rails/main
 
-#= require_tree ./models
-#= require_tree ./controllers
-#= require global
+#= require backbone-rails
+#= require backbone.marionette
+
+#= require Zinc
+#= require_tree ./backbone/modules
+
+$ ->
+  $(document).on "click", "[data-toggle]", -> $(@).toggleClass $(@).data("toggle") || "toggle"
+
+  Zinc.App.start
+    controller: Zinc.global.controller
+    action: Zinc.global.action
