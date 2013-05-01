@@ -1,6 +1,13 @@
 .stage-container
   .row
     .video-container
+      .video-overlay
+        .video-title Spirited Away
+        .video-controls
+        .video-progress
+          .bar{ style: "width: 40%" }
+      %video
     .chat-container.busy
-      %ul.chat
+      %ul.chat-list
+      %ul.user-list( data-toggle )
       %input#send-message{ type: "text", autofocus: true }
