@@ -23,14 +23,14 @@
               - unless current_user.resources_with_role(:owner, Room)
                 %li= icon_link_to "Create Room", new_room_path, icon: "asterisk", class: "btn btn-primary"
 
-              - if current_user.is? :admin
-                %li= link_to "Rooms", rooms_path, class: "btn"
+              %li= link_to "Rooms", rooms_path, class: "btn"
 
               %li= icon_link_to current_user.username, edit_user_path(current_user), icon: "user", class: "btn"
               %li= icon_link_to "", :logout, icon: "signout", class: "btn"
 
             - else
               %li= link_to "Signup", new_user_path, class: "btn btn-primary"
+              %li= link_to "Rooms", rooms_path, class: "btn"
               %li= icon_link_to "Login", :login, icon: "signin", class: "btn"
 
     = yield
