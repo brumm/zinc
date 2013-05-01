@@ -1,38 +1,36 @@
 class ChatController < WebsocketRails::BaseController
 
-  def client_connected_to_channel
+  def user_join
     return unless current_user
 
-    room = message[:room]
-    user_list(room) << current_user.as_json
+    room = data[:room]
+    users_list(room) << current_user.as_json
 
-    WebsocketRails[room].trigger(:client_connected_to_channel, {
+    WebsocketRails[room].trigger(:user_join, {
       user: current_user.as_json
     })
-
     broadcast_user_list room
   end
 
-  def client_disconnected_from_channel
+  def user_leave
     return unless current_user
 
-    room = message[:room]
-    user_list(room).delete current_user.as_json
+    room = data[:room]
+    users_list(room).delete current_user.as_json
 
-    WebsocketRails[room].trigger(:client_disconnected_from_channel, {
+    WebsocketRails[room].trigger(:user_leave, {
       user: current_user.as_json
     })
-
     broadcast_user_list room
   end
 
-  def new_message
+  def user_message
     return unless current_user
 
-    room         = message[:room]
-    chat_message = message[:message]
+    room         = data[:room]
+    chat_message = data[:message]
 
-    WebsocketRails[room].trigger(:new_message, {
+    WebsocketRails[room].trigger(:user_message, {
       user: current_user.as_json,
       message: chat_message
     })
@@ -41,11 +39,12 @@ class ChatController < WebsocketRails::BaseController
   private
 
   def broadcast_user_list room
-    WebsocketRails[room].trigger(:user_list, user_list(room))
+    WebsocketRails[room].trigger(:users_update, users_list(room))
   end
 
-  def user_list room
+  def users_list room
     controller_store[room] ||= []
+    controller_store[room]
   end
 
 end
