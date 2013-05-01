@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   end
 
   def setup_gon
-    Gon.global.controller = controller_name
+    Gon.global.controller = controller_name.singularize.titlecase
     Gon.global.action     = action_name
 
     if current_user
