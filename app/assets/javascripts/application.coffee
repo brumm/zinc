@@ -11,6 +11,7 @@
 
 #= require Zinc
 #= require_tree ./backbone/modules
+#= require_tree ./lib
 
 $ ->
   $(document).on "click", "[data-toggle]", -> $(@).toggleClass $(@).data("toggle") || "toggle"
