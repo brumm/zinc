@@ -1,19 +1,24 @@
+
 .stage-container
   height: 430px
   .row
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1)
-    background-color: $off-white
+
 
   .video-container
     height: 100%
     width: 55.5%
     position: relative
     overflow: hidden
-    video
+    background-color: $off-white
+
+    #video-player
+      width: 100%
       height: 100%
       background:
         image: url(http://i.imgur.com/VaNXHjT.jpg)
         size: cover
+      opacity: 0.5
     .video-overlay
       position: absolute
       top: 0
@@ -23,7 +28,7 @@
       padding: 20px
       opacity: 0
       z-index: 12
-      background-color: rgba(255, 255, 255, 0.5)
+      // background-color: rgba(255, 255, 255, 0.5)
       +transform(scale(1.15))
       +transition(all 300ms $ease-in-out-quad)
 
@@ -39,7 +44,7 @@
       top: 20px
       left: 20px
       font-size: 24px
-      text-shadow: 0px 1px 5px rgba(0, 0, 0, 1)
+      text-shadow: 0px 1px 0px rgba(0, 0, 0, 1), 0px 1px 3px rgba(0, 0, 0, 1)
 
     .video-progress
       position: absolute
@@ -48,7 +53,7 @@
       bottom: 20px
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset, 0 1px 1px rgba(255, 255, 255, 0.2)
       +background-image(linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)))
-      height: 13px
+      height: 15px
       padding: 1px
       border-radius: 30px
       overflow: hidden
@@ -65,6 +70,7 @@
     position: relative
     box-shadow: -1px 0 0 rgba(0, 0, 0, 0.15)
     overflow: hidden
+    background-color: $off-white
     &.busy:before
       position: absolute
       top: 43%
@@ -73,29 +79,35 @@
       width: 100%
       text-align: center
       content: "Connecting..."
+
     .chat-list
       list-style-type: none
       margin: 0
       padding: 15px
       height: 90%
-      color: #4d515b
       font-size: 14px
       overflow: auto
+      color: inherit
       > li + li
         margin-top: 5px
       li
         +clearfix
+
         &.status
           opacity: 0.5
-      a
-        color: inherit
-        max-width: 99%
-        overflow: hidden
-        text-overflow: ellipsis
-        display: inline-block
-        white-space: nowrap
-        &:hover
-          color: #63c6d6
+
+        &.mention
+          color: $dark-red
+
+        a
+          color: inherit
+          max-width: 60%
+          overflow: hidden
+          text-overflow: ellipsis
+          display: inline-block
+          white-space: nowrap
+          &:hover
+            color: #63c6d6
 
       .name
         opacity: 0.5
@@ -107,25 +119,19 @@
     .user-list
       position: absolute
       top: 0
-      right: -95px
+      right: 0
       height: 90%
-      background-color: #fff
-      padding: 10px 20px
+      width: 30%
+      padding: 15px
       list-style-type: none
-      box-shadow: -1px 0 0 rgba(0, 0, 0, 0.1), -2px 0 5px rgba(0, 0, 0, 0.1)
-      color: mix($flat-blue, $off-white, 40%)
-      +transition(right 350ms $ease-in-out-quad)
-      &:before
-        content: "\f0c0"
-        font-family: FontAwesome
-        position: absolute
-        top: 0
-        bottom: 0
-        left: -56px
-        padding: 15px 20px
-        -webkit-font-smoothing: antialiased
-      &.toggle
-        right: 0
+      > li
+        text-align: right
+        &.owner .username:before
+          vertical-align: middle
+          font-family: FontAwesome
+          content: "\f005"
+          margin-right: 5px
+          color: gold
 
   #send-message
     position: absolute
@@ -137,7 +143,6 @@
     padding: 0 10px
     font: inherit
     font-size: 14px
-    outline: none
     box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1), 0 -2px 5px rgba(0, 0, 0, 0.1)
     &:focus
       box-shadow: 0 -1px 0 transparentize($bright-blue, 0.5), 0 -2px 5px transparentize($bright-blue, 0.5)
