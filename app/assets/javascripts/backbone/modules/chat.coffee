@@ -1,13 +1,6 @@
 Zinc.App.module "Chat", (Chat, App) ->
   @startWithParent = false
 
-  class UserListItem extends Backbone.Marionette.ItemView
-    template: "userlist/user"
-
-  class UserListView extends Backbone.Marionette.CollectionView
-    itemView: UserListItem
-    el: ".user-list"
-
   class ChatView extends Backbone.View
     el: ".chat-container"
     events:
@@ -24,15 +17,10 @@ Zinc.App.module "Chat", (Chat, App) ->
     console.log "init:", @moduleName, arguments
 
     $(".chat-container").removeClass "busy"
-    App.execute "handle", ["user_message", "user_join", "user_leave", "users_update"]
     App.Socket.socket.trigger("user_join", room: Zinc.room)
 
     @chat_view = new ChatView
-    @user_list_view = new UserListView
-      collection: new Backbone.Collection
-
-    App.vent.on "users_update", (users_list) =>
-      @user_list_view.collection.reset users_list
+    App.execute "handle", ["user_message", "user_join", "user_leave"]
 
     App.vent.on "user_join", (user) =>
       @chat_view.$chat_list.append App.tmpl("chat/joined", user)
