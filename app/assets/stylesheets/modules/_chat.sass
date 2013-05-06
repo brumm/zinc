@@ -1,0 +1,66 @@
+.chat-container
+  height: 100%
+  width: 44.5%
+  position: relative
+  box-shadow: -1px 0 0 rgba(0, 0, 0, 0.15)
+  overflow: hidden
+  background-color: $off-white
+  &.busy:before
+    position: absolute
+    top: 43%
+    color: rgba(0, 0, 0, 0.3)
+    display: block
+    width: 100%
+    text-align: center
+    content: "Connecting..."
+
+  .chat-list
+    list-style-type: none
+    margin: 0
+    padding: 15px
+    height: 90%
+    font-size: 14px
+    overflow: auto
+    color: inherit
+    > li + li
+      margin-top: 5px
+    li
+      +clearfix
+
+      &.status
+        opacity: 0.5
+
+      &.mention
+        color: $dark-red
+
+      a
+        color: inherit
+        max-width: 60%
+        overflow: hidden
+        text-overflow: ellipsis
+        display: inline-block
+        white-space: nowrap
+        &:hover
+          color: #63c6d6
+
+    .name
+      opacity: 0.5
+
+    .name:after
+      content: ":"
+      margin-right: 4px
+
+  #send-message
+    position: absolute
+    bottom: 0
+    left: 0
+    height: 10%
+    width: 100%
+    border: none
+    padding: 0 10px
+    font: inherit
+    font-size: 14px
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1), 0 -2px 5px rgba(0, 0, 0, 0.1)
+    &:focus
+      box-shadow: 0 -1px 0 transparentize($bright-blue, 0.5), 0 -2px 5px transparentize($bright-blue, 0.5)
+
