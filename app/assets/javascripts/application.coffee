@@ -14,7 +14,8 @@
 #= require_tree ./lib
 
 $ ->
-  $(document).on "click", "[data-toggle]", -> $(@).toggleClass $(@).data("toggle") || "toggle"
+  $(document).on "click", "[data-toggle]", ->
+    $(@).toggleClass $(@).data("toggle") || "toggle"
 
   # start with options
   Zinc.App.start Zinc.global
