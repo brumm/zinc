@@ -17,7 +17,7 @@
   > li + li
     margin-top: 5px
   > li
-
+    text-align: right
 
 .rooms-list
   list-style-type: none
@@ -39,3 +39,47 @@
       margin-right: 10px
       font-size: 20px
       color: lighten($flat-blue, 50%)
+
+.play-list
+  list-style-type: none
+  background-color: rgba(0, 0, 0, 0.05)
+  padding: 10px
+  width: 55.5%
+  margin-top: 20px
+  border-radius: 3px
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.07) inset, 0 1px 5px rgba(0, 0, 0, 0.1) inset
+  counter-reset: playlist
+  // max-height: 100px
+  overflow: scroll
+  position: relative
+  &:empty:before
+    position: absolute
+    top: 43%
+    color: rgba(0, 0, 0, 0.3)
+    display: block
+    width: 100%
+    text-align: center
+    content: "No videos yet"
+
+  > li + li
+    margin-top: 10px
+
+  > li
+    counter-increment: playlist
+    &:before
+      content: counter(playlist)
+      background-color: rgba(0, 0, 0, 0.1)
+      text-align: center
+      text-indent: 1px
+      border-radius: 100px
+      display: inline-block
+      font-size: 12px
+      padding: 0px 6px
+      line-height: 20px
+      margin-right: 5px
+    .title
+      vertical-align: middle
+    .url
+      float: right
+      opacity: 0.5
+      text-decoration: none
