@@ -13,15 +13,16 @@ Zinc.App.module "Chat", (Chat, App) ->
       $target = $(e.target)
       message = $target.val()
 
-      # if !current_user
-      #  window.location = Routes.login_path(room: App.Room.name)
-      # enter
+      # enter and message
       if e.which is 13 and message
-        App.Socket.do "user_message",
-          message: message
-          room: App.Room.name
-        @last_message = message
-        $target.val("")
+        unless App.current_user?
+         window.location = Routes.login_path()
+        else
+          App.Socket.do "user_message",
+            message: message
+            room: App.Room.name
+          @last_message = message
+          $target.val("")
 
       # arrow up
       if e.which is 38
