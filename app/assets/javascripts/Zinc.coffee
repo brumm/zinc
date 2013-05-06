@@ -10,6 +10,8 @@ Zinc.App.addInitializer (options) ->
 
   @vent.on "all", (event, data) ->
     console.log "event:", event, if data? then data else ""
+  @tmpl = (template, data) ->
+    Backbone.Marionette.Renderer.render template, data
 
   # start notifications
   @module("Notifications").start(options.debug)
