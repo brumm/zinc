@@ -7,11 +7,22 @@ Zinc.App.module "Chat", (Chat, App) ->
       'keydown #send-message': 'send_message'
 
     send_message: (e) ->
-      if e.which is 13
-        App.Socket.socket.trigger "user_message",
-          message: $(e.target).val()
-          room: Zinc.room
-        $(e.target).val("")
+      $target = $(e.target)
+      message = $target.val()
+
+      # if !current_user
+      #  window.location = Routes.login_path(room: App.Room.name)
+      # enter
+      if e.which is 13 and message
+        App.Socket.do "user_message",
+          message: message
+          room: App.Room.name
+        @last_message = message
+        $target.val("")
+
+      # arrow up
+      if e.which is 38
+        $target.val(@last_message)
 
   @addInitializer =>
     console.log "init:", @moduleName, arguments
