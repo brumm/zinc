@@ -20,7 +20,7 @@
         .header-actions
           %ul.vertical-action-list
             - if current_user
-              - unless current_user.resources_with_role(:owner, Room)
+              - unless current_user.is?(:owner, Room)
                 %li= icon_link_to "Create Room", new_room_path, icon: "asterisk", class: "btn btn-primary"
 
               %li= link_to "Rooms", rooms_path, class: "btn"
