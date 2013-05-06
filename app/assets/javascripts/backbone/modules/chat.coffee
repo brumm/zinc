@@ -6,6 +6,9 @@ Zinc.App.module "Chat", (Chat, App) ->
     events:
       'keydown #send-message': 'send_message'
 
+    initialize: ->
+      @$chat_list = @$el.find(".chat-list")
+
     send_message: (e) ->
       $target = $(e.target)
       message = $target.val()
@@ -25,11 +28,10 @@ Zinc.App.module "Chat", (Chat, App) ->
         $target.val(@last_message)
 
   @addInitializer =>
-    console.log "init:", @moduleName, arguments
-
-    $(".chat-container").removeClass "busy"
+    App.vent.trigger "init:", @moduleName, arguments
 
     @chat_view = new ChatView
+    @chat_view.$el.removeClass "busy"
     App.execute "handle", ["user_message", "user_join", "user_leave"]
 
     App.vent.on "user_join", (user) =>
@@ -39,10 +41,13 @@ Zinc.App.module "Chat", (Chat, App) ->
       @chat_view.$chat_list.append App.tmpl("chat/left", user)
 
     App.vent.on "user_message", (data) =>
-      scrollHeight = @chat_view.$el.find(".chat-list")[0].scrollHeight
-      @chat_view.$el.find(".chat-list").scrollTop(scrollHeight)
+      if App.current_user.get("name") isnt data.user.name
+        name_regex = RegExp App.current_user.get("name")
+        data.type = if name_regex.test data.message then "mention" else ""
 
       @chat_view.$chat_list.append App.tmpl("chat/message", data)
+      scrollHeight = @chat_view.$chat_list[0].scrollHeight
+      @chat_view.$chat_list.scrollTop(scrollHeight)
 
   @addFinalizer =>
-    console.log "bye:", @moduleName, arguments
+    App.vent.trigger "bye:", @moduleName, arguments
