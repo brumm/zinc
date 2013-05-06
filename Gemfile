@@ -10,6 +10,7 @@ gem 'friendly_id'
 gem 'roleable'
 gem 'websocket-rails'
 gem 'gon'
+gem 'js-routes'
 
 gem 'haml-rails'
 gem 'quiet_assets'

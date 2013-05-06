@@ -2,6 +2,7 @@
 #= require jquery_ujs
 
 #= require hamlcoffee
+#= require js-routes
 #= require_tree ./templates
 
 #= require websocket_rails/main
