@@ -43,9 +43,11 @@ form > ul
   input[type=submit]
     float: right
 
-::-webkit-input-placeholder
-  font: inherit
-  -webkit-font-smoothing: antialiased
+#{$all-text-inputs}
+  outline: none
+  +placeholder
+    font: inherit
+    -webkit-font-smoothing: antialiased
 
 // input:-webkit-autofill
 //   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset, 0 0 0 50px $off-white inset !important
