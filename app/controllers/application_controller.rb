@@ -11,10 +11,8 @@ class ApplicationController < ActionController::Base
   def setup_gon
     Gon.global.controller = controller_name.singularize.titlecase
     Gon.global.action     = action_name
-
-    if current_user
-      Gon.global.user     = current_user.as_json.merge({roles: current_user.roles_for_resource(nil).map(&:name)})
-    end
+    Gon.global.user       = (current_user || User.new).as_json
+    Gon.global.debug      = Rails.env.development?
   end
 
 end
