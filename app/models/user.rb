@@ -13,12 +13,23 @@ class User < ActiveRecord::Base
   validates_uniqueness_of   :username
   validates_uniqueness_of   :email
 
-  def is? role, instance = nil
-    self.has_role? role, instance
+  def is? role, instance_or_class = nil
+    if instance_or_class.respond_to? :id
+      self.has_role? role, instance_or_class
+    else
+      (resources_with_role role, instance_or_class).any?
+    end
   end
 
-  def as_json
-    { name: self.username }
+  def roles resource = nil
+    self.roles_for_resource(resource).map(&:name)
+  end
+
+  def as_json options = {}
+    {
+      name: self.username,
+      roles: self.roles(options[:resource])
+    }
   end
 
 end
