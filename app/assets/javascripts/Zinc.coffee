@@ -8,8 +8,6 @@ Zinc.App = new Backbone.Marionette.Application()
 
 Zinc.App.addInitializer (options) ->
 
-  @vent.on "all", (event, data) ->
-    console.log "event:", event, if data? then data else ""
   @tmpl = (template, data) ->
     Backbone.Marionette.Renderer.render template, data
 
