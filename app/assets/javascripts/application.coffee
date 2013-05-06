@@ -16,6 +16,5 @@
 $ ->
   $(document).on "click", "[data-toggle]", -> $(@).toggleClass $(@).data("toggle") || "toggle"
 
-  Zinc.App.start
-    controller: Zinc.global.controller
-    action: Zinc.global.action
+  # start with options
+  Zinc.App.start Zinc.global
