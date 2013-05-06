@@ -1,30 +1,39 @@
 class ChatController < WebsocketRails::BaseController
 
   def user_join
+    # fail fast
     return unless current_user
 
     room = data[:room]
-    users_list(room) << current_user.as_json
+    room_model = Room.find room
+    user = current_user.as_json(resource: room_model)
+
+    users_list(room) << user
 
     WebsocketRails[room].trigger(:user_join, {
-      user: current_user.as_json
+      user: user
     })
     broadcast_user_list room
   end
 
   def user_leave
+    # fail fast
     return unless current_user
 
     room = data[:room]
-    users_list(room).delete current_user.as_json
+    room_model = Room.find room
+    user = current_user.as_json(resource: room_model)
+
+    users_list(room).delete user
 
     WebsocketRails[room].trigger(:user_leave, {
-      user: current_user.as_json
+      user: user
     })
     broadcast_user_list room
   end
 
   def user_message
+    # fail fast
     return unless current_user
 
     room         = data[:room]
