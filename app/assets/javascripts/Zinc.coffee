@@ -1,4 +1,5 @@
 
+# hook up JST to Marionette
 Backbone.Marionette.Renderer.render = (template, data) ->
   throw "Template #{template} not found!" unless JST[template]
   JST[template](data)
@@ -12,8 +13,12 @@ Zinc.App.addInitializer (options) ->
 
   # start notifications
   @module("Notifications").start(options.debug)
+
+  # start our 'controller' module with action
   @module(options.controller).start(options.action)
 
+  # since there's no App.stop() method,
+  # we'll do it the hard way
   $(window).unload =>
     console.log "window:unload"
     for name, module of @submodules
