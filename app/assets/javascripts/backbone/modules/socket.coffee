@@ -10,8 +10,16 @@ Zinc.App.module "Socket", (Socket, App) ->
     handle event for event in events
 
   @addInitializer =>
-    console.log "init:", @moduleName, arguments
+    App.vent.trigger "init:", @moduleName, arguments
 
     @socket         = new WebSocketRails "#{location.host}/websocket"
-    @channel        = @socket.subscribe Zinc.room
     @socket.on_open = -> App.vent.trigger "socket_connected", arguments
+
+  @on = (event, callback) ->
+    @channel.bind event, callback
+
+  @do = (event, data) ->
+    @socket.trigger event, data
+
+  @subscribe = (channel) ->
+    @channel = @socket.subscribe channel
