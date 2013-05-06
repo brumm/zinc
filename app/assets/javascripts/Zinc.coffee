@@ -10,6 +10,8 @@ Zinc.App.addInitializer (options) ->
   @vent.on "all", (event, data) ->
     console.log "event:", event, if data? then data else ""
 
+  # start notifications
+  @module("Notifications").start(options.debug)
   @module(options.controller).start(options.action)
 
   $(window).unload =>
