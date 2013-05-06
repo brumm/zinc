@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   def setup_gon
     Gon.global.controller = controller_name.singularize.titlecase
     Gon.global.action     = action_name
-    Gon.global.user       = (current_user || User.new).as_json
+    Gon.global.user       = (current_user || nil).as_json
     Gon.global.debug      = Rails.env.development?
   end
 

@@ -15,7 +15,7 @@ Zinc.App.addInitializer (options) ->
   class UsersCollection extends Backbone.Collection
     model: User
 
-  @current_user     = new User options.user
+  @current_user     = if options.user? then new User options.user else options.user
   @users_collection = new UsersCollection
 
   @vent.on "users_update", (users) =>
