@@ -1,0 +1,5 @@
+%li.browl-notification.out.event
+  .icon
+  .content
+    .title= @title
+    %pre.message= @message

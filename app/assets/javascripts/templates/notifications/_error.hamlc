@@ -1,0 +1,5 @@
+%li.browl-notification.out.error
+  .icon
+  .content
+    .title= @title
+    .message= @message
