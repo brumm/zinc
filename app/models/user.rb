@@ -22,6 +22,7 @@ class User < ActiveRecord::Base
   end
 
   def roles resource = nil
+    return [] if self.new_record?
     self.roles_for_resource(resource).map(&:name)
   end
 
