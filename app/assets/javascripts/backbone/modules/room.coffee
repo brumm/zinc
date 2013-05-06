@@ -1,13 +1,22 @@
 Zinc.App.module "Room", (Room, App) ->
   @startWithParent = false
 
-  @addInitializer =>
-    console.log "init:", @moduleName, arguments
-    App.Socket.start()
+  App.vent.on "socket_connected", =>
+    App.Socket.subscribe @name
+    App.Socket.do "user_join", room: @name
 
-    App.vent.on "socket_connected", =>
-      $(".chat-container").removeClass "busy"
-      App.Chat.start()
+    App.Chat.start()
+    App.Userlist.start()
+
+  @actions =
+    show: =>
+      App.Socket.start()
+      @name = Zinc.room
+
+  @addInitializer (action) =>
+    App.vent.trigger "init:", @moduleName, arguments
+    @actions[action]?()
 
   @addFinalizer =>
-    console.log "bye:", @moduleName, arguments
+    App.vent.trigger "bye:", @moduleName, arguments
+    App.Socket.do "user_leave", room: @name

@@ -17,7 +17,6 @@ Zinc.App.module "Chat", (Chat, App) ->
     console.log "init:", @moduleName, arguments
 
     $(".chat-container").removeClass "busy"
-    App.Socket.socket.trigger("user_join", room: Zinc.room)
 
     @chat_view = new ChatView
     App.execute "handle", ["user_message", "user_join", "user_leave"]
@@ -36,4 +35,3 @@ Zinc.App.module "Chat", (Chat, App) ->
 
   @addFinalizer =>
     console.log "bye:", @moduleName, arguments
-    App.Socket.socket.trigger("user_leave", room: Zinc.room)
