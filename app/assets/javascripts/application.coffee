@@ -19,4 +19,4 @@ $ ->
     $(@).toggleClass $(@).data("toggle") || "toggle"
 
   # start with options
-  Zinc.App.start Zinc.global
+  Zinc.App.start _.extend Zinc.global, Zinc.config

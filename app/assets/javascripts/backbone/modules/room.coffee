@@ -11,7 +11,7 @@ Zinc.App.module "Room", (Room, App) ->
   @actions =
     show: =>
       App.Socket.start()
-      @name = Zinc.room
+      @name = App.options.room
 
   @addInitializer (action) =>
     App.vent.trigger "init:", @moduleName, arguments

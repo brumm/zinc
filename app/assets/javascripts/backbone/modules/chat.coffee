@@ -20,7 +20,6 @@ Zinc.App.module "Chat", (Chat, App) ->
         else
           App.Socket.do "user_message",
             message: message
-            room: App.Room.name
           @last_message = message
           $target.val("")
 
