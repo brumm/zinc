@@ -4,7 +4,7 @@ Zinc.App.module "Userlist", (Userlist, App) ->
   class UserListItem extends Backbone.Marionette.ItemView
     tagName: "li"
     template: "userlist/user"
-    className: => @model.get("roles")
+    className: => @model.get("roles").join(" ")
 
   class UserListView extends Backbone.Marionette.CollectionView
     itemView: UserListItem
