@@ -23,11 +23,16 @@ class User < ActiveRecord::Base
 
   def roles resource = nil
     return [] if self.new_record?
-    self.roles_for_resource(resource).map(&:name)
+
+    global_roles = self.roles_for_resource(nil).map(&:name)
+    resource_roles = self.roles_for_resource(resource).map(&:name)
+
+    (global_roles + resource_roles).uniq
   end
 
   def as_json options = {}
     {
+      id: self.id,
       name: self.username,
       roles: self.roles(options[:resource])
     }

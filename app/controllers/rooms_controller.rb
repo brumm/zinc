@@ -6,7 +6,14 @@ class RoomsController < ApplicationController
 
   def show
     @room = Room.find(params[:id])
-    gon.room = @room.slug
+
+    gon.push({
+      config: {
+        room: @room.slug,
+        videos: @room.videos.as_json,
+        user: (current_user.as_json(resource: @room) || {}).as_json
+      }
+    })
   end
 
   def new
