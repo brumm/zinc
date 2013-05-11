@@ -7,6 +7,7 @@ Zinc.App.module "Room", (Room, App) ->
 
     App.Chat.start()
     App.Userlist.start()
+    App.Playlist.start()
 
   @actions =
     show: =>
