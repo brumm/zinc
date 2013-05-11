@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130422190937) do
+ActiveRecord::Schema.define(:version => 20130509203510) do
 
   create_table "applied_roles", :force => true do |t|
     t.integer  "subject_id"
@@ -46,5 +46,20 @@ ActiveRecord::Schema.define(:version => 20130422190937) do
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
+
+  create_table "videos", :force => true do |t|
+    t.string   "title"
+    t.string   "url"
+    t.string   "external_id"
+    t.text     "video_url"
+    t.string   "thumbnail_url"
+    t.integer  "length"
+    t.integer  "room_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.datetime "ended_at"
+  end
+
+  add_index "videos", ["room_id"], :name => "index_videos_on_room_id"
 
 end

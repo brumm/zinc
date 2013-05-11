@@ -1,0 +1,3 @@
+%a.title{ href: @url }= @title
+- if @current_user().is_role("owner")
+  %i.icon-remove.remove
