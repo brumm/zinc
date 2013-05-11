@@ -40,6 +40,12 @@ Zinc.App.module "Chat", (Chat, App) ->
     App.vent.on "user_leave", (user) =>
       @chat_view.$chat_list.append App.tmpl("chat/left", user)
 
+    App.vent.on "video_add", (data) =>
+      @chat_view.$chat_list.append App.tmpl("chat/added_video", data)
+
+    App.vent.on "video_remove", (data) =>
+      @chat_view.$chat_list.append App.tmpl("chat/removed_video", data)
+
     App.vent.on "user_message", (data) =>
       if App.current_user.get("name") isnt data.user.name
         name_regex = RegExp App.current_user.get("name")
