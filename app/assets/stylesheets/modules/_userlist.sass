@@ -6,11 +6,22 @@
   width: 30%
   padding: 15px
   list-style-type: none
+  background-color: $off-white
   > li
     text-align: right
+
+    &.admin .username
+      color: $dark-red
+
     &.owner .username:before
       vertical-align: middle
       font-family: FontAwesome
       content: "\f005"
       margin-right: 5px
       color: #ffd700
+
+    &.mod .username:before
+      vertical-align: middle
+      font-family: FontAwesome
+      content: "\f0f4"
+      margin-right: 5px
