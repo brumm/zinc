@@ -17,5 +17,8 @@
 
 .playlist-container
   .row
-    %input#add-video{ type: "text", placeholder: "Add Video" }
-    %ul.play-list
+    .half-box
+      .search-box
+        %input#add-video{ type: "text", placeholder: "Add Video", data: { typing: true } }
+        %ul.search-results-list
+      %ul.play-list

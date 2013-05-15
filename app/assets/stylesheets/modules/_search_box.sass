@@ -1,0 +1,47 @@
+.search-box
+  background-color: white
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2)
+  border-radius: 3px
+
+  #add-video
+    width: 100%
+    box-shadow: none
+    border-radius: 3px
+    &:focus + .search-results-list:not(:empty)
+      display: block
+
+  .search-results-list
+    list-style-type: none
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset, 0 5px 10px rgba(0, 0, 0, 0.2)
+    padding-top: 1px
+    max-height: 192px
+    overflow: scroll
+    &:empty
+      display: none
+    > li
+      +clearfix
+      cursor: pointer
+      padding: 8px 10px 7px
+      position: relative
+      &:hover
+        background-color: $light-grey
+
+      &:hover:before
+        position: absolute
+        +font-awesome("\F055")
+        font-size: 25px
+        top: 50%
+        margin-top: -13px
+        right: 15px
+        color: $bright-blue
+
+      .thumbnail
+        width: 60px
+        float: left
+      .content
+        margin-left: 70px
+
+        .title, .url
+          display: block
+
+

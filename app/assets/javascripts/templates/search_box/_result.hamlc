@@ -1,0 +1,6 @@
+.thumbnail
+  %img{ src: @thumbnail }
+.content
+  %span.title= @title
+  %span.url.muted= @url
+  %span= @selected

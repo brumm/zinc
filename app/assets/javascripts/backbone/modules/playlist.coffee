@@ -21,23 +21,6 @@ Zinc.App.module "Playlist", (Playlist, App) ->
     itemView: PlayListItem
     el: ".play-list"
 
-  class VideoPlaylistView extends Backbone.View
-    events:
-      'keydown #add-video': 'video_add'
-    el: ".playlist-container"
-
-    video_add: (e) ->
-      $target = $(e.target)
-      url = $target.val()
-
-      # enter and url
-      if e.which is 13 and url
-        unless App.current_user?
-         window.location = Routes.login_path()
-        else
-          App.Socket.do "video_add",
-            url: url
-          $target.val("")
 
   @addInitializer =>
     App.vent.trigger "init:", @moduleName, arguments
@@ -52,7 +35,8 @@ Zinc.App.module "Playlist", (Playlist, App) ->
       collection: @videos_collection
     @play_list_view.render()
 
-    @video_playlist_view = new VideoPlaylistView()
+    App.current_user.on "change:roles", =>
+      @play_list_view.render()
 
   @addFinalizer =>
     App.vent.trigger "bye:", @moduleName, arguments
