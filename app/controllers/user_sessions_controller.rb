@@ -10,7 +10,7 @@ class UserSessionsController < ApplicationController
   def create
     @user = login(params[:username], params[:password])
     if @user
-      redirect_to session[:return_to]
+      redirect_to session[:return_to] || rooms_path
     else
       flash.now.alert = "Something went oops."
       render :new
