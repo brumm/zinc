@@ -5,9 +5,17 @@ Zinc.App.module "User", (User, App) ->
     is_role: (role) ->
       _.contains @get("roles"), role
 
-    # make_mod: ->
-    #   App.Socket.do "user_make_mod",
-    #     user_id: @get("id")
+    make_mod: ->
+      App.Socket.do "user_change_role",
+        role: "mod"
+        action: "add"
+        user_id: @get("id")
+
+    de_mod: ->
+      App.Socket.do "user_change_role",
+        role: "mod"
+        action: "remove"
+        user_id: @get("id")
 
   class UsersCollection extends Backbone.Collection
     model: User
@@ -20,7 +28,11 @@ Zinc.App.module "User", (User, App) ->
     App.users_collection = new UsersCollection
 
     App.vent.on "users_update", (users) =>
-      App.users_collection.reset users
+      # TODO: should the current user be set by the server?
+      current_user = user for user in users when user.id is App.current_user.get("id")
+      App.current_user.set current_user
+
+      App.users_collection.set users
 
   @addFinalizer =>
     App.vent.trigger "bye:", @moduleName, arguments

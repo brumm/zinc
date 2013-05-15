@@ -1,3 +1,5 @@
 %a.title{ href: @url }= @title
-- if @current_user().is_role("owner")
-  %i.icon-remove.remove
+%span.muted= "#{@length} seconds"
+
+- if @current_user().is_role("owner") or @current_user().is_role("mod")
+  .remove
