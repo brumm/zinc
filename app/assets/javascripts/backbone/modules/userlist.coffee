@@ -18,5 +18,8 @@ Zinc.App.module "Userlist", (Userlist, App) ->
     @user_list_view = new UserListView
       collection: App.users_collection
 
+    App.users_collection.on "sort", =>
+      @user_list_view.render()
+
   @addFinalizer =>
     App.vent.trigger "bye:", @moduleName, arguments
