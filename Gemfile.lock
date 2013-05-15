@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/bokmann/font-awesome-rails
+  revision: 492102d7a4e5718607d21a03d0967e3aa792633d
+  specs:
+    font-awesome-rails (3.1.0.0)
+      railties (>= 3.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -60,8 +67,6 @@ GEM
       multipart-post (~> 1.1)
     faye-websocket (0.4.7)
       eventmachine (>= 0.12.0)
-    font-awesome-rails (3.0.2.0)
-      railties (>= 3.1)
     friendly_id (4.0.9)
     gon (4.1.0)
       actionpack (>= 2.3.0)
@@ -192,7 +197,7 @@ DEPENDENCIES
   bourbon
   coffee-rails (~> 3.2.1)
   execjs
-  font-awesome-rails
+  font-awesome-rails!
   friendly_id
   gon
   haml-rails
