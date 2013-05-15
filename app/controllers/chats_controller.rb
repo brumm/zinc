@@ -45,21 +45,27 @@ class ChatsController < WebsocketRails::BaseController
     })
   end
 
-  # def user_make_mod
-  #   room_name         = data[:room]
-  #   room      = Room.find room_name
+  def user_change_role
+    room_name         = data[:room]
+    role              = data[:role]
+    action            = data[:action]
+    room      = Room.find room_name
 
-  #   return unless current_user and current_user.is? :owner, room
+    return unless current_user and (current_user.is?(:owner, room) or current_user.has_role?(:admin))
 
-  #   user = User.find data[:user_id]
-  #   users_list(room_name).delete user
+    user = User.find data[:user_id]
 
-  #   user.add_role(:mod, room)
-  #   user = user.as_json(resource: room)
-  #   users_list(room_name) << user
+    if action == "remove"
+      user.remove_role(role, room)
+    elsif action == "add"
+      user.add_role(role, room)
+    end
 
-  #   broadcast_user_list room_name
-  # end
+    user = user.as_json(resource: room)
+    users_list(room_name)[user[:id]] = user
+
+    broadcast_user_list room_name
+  end
 
   private
 
