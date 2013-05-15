@@ -23,7 +23,6 @@ gem 'coffee-rails', '~> 3.2.1'
 gem 'haml_coffee_assets'
 gem 'execjs'
 gem 'jquery-rails'
-gem 'backbone-rails'
 gem 'marionette-rails'
 
 gem 'uglifier', '>= 1.0.3'

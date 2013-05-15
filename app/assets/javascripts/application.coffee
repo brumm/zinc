@@ -7,7 +7,8 @@
 
 #= require websocket_rails/main
 
-#= require backbone-rails
+#= require underscore-min
+#= require backbone-min
 #= require backbone.marionette
 
 #= require Zinc
