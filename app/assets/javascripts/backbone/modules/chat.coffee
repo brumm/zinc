@@ -18,7 +18,7 @@ Zinc.App.module "Chat", (Chat, App) ->
         unless App.current_user?
          window.location = Routes.login_path()
         else
-          App.Socket.do "user_message",
+          App.Room.do "user_message",
             message: message
           @last_message = message
           $target.val("")

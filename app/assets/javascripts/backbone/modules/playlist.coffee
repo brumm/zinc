@@ -14,7 +14,7 @@ Zinc.App.module "Playlist", (Playlist, App) ->
       "click .remove": "video_remove"
 
     video_remove: (e) ->
-      App.Socket.do "video_remove",
+      App.Room.do "video_remove",
         video_id: @model.get "id"
 
   class PlayListView extends Backbone.Marionette.CollectionView

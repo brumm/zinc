@@ -3,12 +3,17 @@ Zinc.App.module "Room", (Room, App) ->
 
   App.vent.on "socket_connected", =>
     App.Socket.subscribe @name
-    App.Socket.do "user_join"
+    @do "user_join"
 
     App.Chat.start()
     App.Userlist.start()
     App.Playlist.start()
     App.SearchBox.start()
+
+  @do = (event, data = {}) ->
+    _.extend data,
+      room: @name
+    App.Socket.do event, data
 
   @actions =
     show: =>
@@ -21,4 +26,4 @@ Zinc.App.module "Room", (Room, App) ->
 
   @addFinalizer =>
     App.vent.trigger "bye:", @moduleName, arguments
-    App.Socket.do "user_leave"
+    @do "user_leave"

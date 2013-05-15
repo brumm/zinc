@@ -29,7 +29,7 @@ Zinc.App.module "SearchBox", (SearchBox, App) ->
       "click": "select"
 
     select: ->
-      App.Socket.do "video_add",
+      App.Room.do "video_add",
         url: @model.get("url")
 
       $("#add-video").val("")
@@ -63,7 +63,7 @@ Zinc.App.module "SearchBox", (SearchBox, App) ->
 
     enter: (e) ->
       if e.which is 13
-        App.Socket.do "video_add",
+        App.Room.do "video_add",
           url: e.target.value
         $("#add-video").val("")
         $(".search-results-list").empty()

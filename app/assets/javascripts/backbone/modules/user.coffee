@@ -6,13 +6,13 @@ Zinc.App.module "User", (User, App) ->
       _.contains @get("roles"), role
 
     make_mod: ->
-      App.Socket.do "user_change_role",
+      App.Room.do "user_change_role",
         role: "mod"
         action: "add"
         user_id: @get("id")
 
     de_mod: ->
-      App.Socket.do "user_change_role",
+      App.Room.do "user_change_role",
         role: "mod"
         action: "remove"
         user_id: @get("id")
