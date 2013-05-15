@@ -29,8 +29,7 @@ form > ul
 
     &[data-error]
       &:after
-        font-family: "FontAwesome"
-        content: "\f071" " " attr(data-error)
+        +font-awesome("\f071" " " attr(data-error))
         color: $dark-red
         -webkit-font-smoothing: antialiased
         margin-left: 10px
