@@ -18,7 +18,10 @@ Zinc.App.module "Socket", (Socket, App) ->
   @on = (event, callback) ->
     @channel.bind event, callback
 
-  @do = (event, data) ->
+  @do = (event, data = {}) ->
+    _.extend data,
+      room: App.Room.name
+
     @socket.trigger event, data
 
   @subscribe = (channel) ->
