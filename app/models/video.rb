@@ -21,6 +21,7 @@ class Video < ActiveRecord::Base
     {
       id: self.id,
       title: self.title,
+      length: self.length,
       url: self.url,
       thumbnail_url: self.thumbnail_url
     }
