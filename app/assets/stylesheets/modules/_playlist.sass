@@ -34,6 +34,13 @@
           counter-increment: playlist
           > *
             vertical-align: middle
+          &:hover
+            a
+              color: $bright-blue
+            &:before
+              background-color: $bright-blue
+              color: white
+
           &:before
             content: counter(playlist)
             background-color: rgba(0, 0, 0, 0.1)
