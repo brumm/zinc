@@ -8,7 +8,7 @@ class Video < ActiveRecord::Base
 
   validates :url, presence: true, format: YOUTUBE_ID_REGEX
 
-  default_scope where("ended_at IS NULL")
+  default_scope where("ended_at IS NULL").order("created_at ASC")
 
   def init
     if self.new_record? and self.url[YOUTUBE_ID_REGEX, 1]
