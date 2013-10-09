@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  database: zinctub_development
+  username: brumm
+  password:
+  encoding: utf8
+  host: localhost
+
+test:
+  adapter: postgresql
+  database: zinctub_test
+  username: brumm
+  password:
+  encoding: utf8
+  host: localhost
+
+production:
+  adapter: postgresql
+  database: zinctub_production
+  username: brumm
+  password:
+  encoding: utf8
+  host: localhost
