@@ -5,7 +5,7 @@ class ChatsController < WebsocketRails::BaseController
     return unless current_user
 
     room_name = data[:room]
-    room = Room.find room_name
+    room = Room.friendly.find room_name
     user = current_user.as_json(resource: room)
 
     users_list(room_name)[user[:id]] = user
@@ -21,7 +21,7 @@ class ChatsController < WebsocketRails::BaseController
     return unless current_user
 
     room_name = data[:room]
-    room = Room.find room_name
+    room = Room.friendly.find room_name
     user = current_user.as_json(resource: room)
 
     users_list(room_name).delete user[:id]
@@ -49,7 +49,7 @@ class ChatsController < WebsocketRails::BaseController
     room_name         = data[:room]
     role              = data[:role]
     action            = data[:action]
-    room      = Room.find room_name
+    room      = Room.friendly.find room_name
 
     return unless current_user and (current_user.is?(:owner, room) or current_user.has_role?(:admin))
 

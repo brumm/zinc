@@ -5,7 +5,7 @@ class RoomsController < ApplicationController
   end
 
   def show
-    @room = Room.find(params[:id])
+    @room = Room.friendly.find(params[:id])
 
     gon.push({
       config: {
