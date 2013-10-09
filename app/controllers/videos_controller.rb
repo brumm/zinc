@@ -5,7 +5,7 @@ class VideosController < WebsocketRails::BaseController
     return unless current_user
 
     room_name = data[:room]
-    room      = Room.find room_name
+    room      = Room.friendly.find room_name
     user      = current_user.as_json(resource: room)
 
     video = room.videos.build( url: data[:url] )
@@ -25,7 +25,7 @@ class VideosController < WebsocketRails::BaseController
 
     room_name = data[:room]
     video_id  = data[:video_id]
-    room      = Room.find room_name
+    room      = Room.friendly.find room_name
     user      = current_user.as_json(resource: room)
 
     video = room.videos.find(video_id).destroy
