@@ -16,9 +16,9 @@ Zinc.App.module "Notifications", (Notifications, App) ->
       # hook up event reporting
       App.vent.on "all", (event, data) =>
         console.log "event:", event, if data? then data else ""
-        @notifier.notify "event",
-          title: event
-          message: JSON.stringify data, undefined, 2
+        # @notifier.notify "event",
+        #   title: event
+        #   message: JSON.stringify data, undefined, 2
 
   @notify = ->
     @notifier.notifier arguments

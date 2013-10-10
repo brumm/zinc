@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   def setup_gon
     Gon.global.controller = controller_name.singularize.titlecase
     Gon.global.action     = action_name
-    Gon.global.debug      = Rails.env.development?
+    Gon.global.debug      = true
   end
 
 end
