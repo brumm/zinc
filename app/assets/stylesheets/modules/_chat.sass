@@ -17,7 +17,7 @@
   .chat-list
     list-style-type: none
     margin: 0
-    padding: 15px
+    padding: 15px 15px 0
     height: 90%
     font-size: 14px
     overflow: auto
@@ -26,6 +26,9 @@
       margin-top: 5px
     li
       +clearfix
+
+      &:last-child
+        margin-bottom: 15px
 
       &.status
         opacity: 0.5
