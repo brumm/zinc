@@ -12,6 +12,7 @@ class Video < ActiveRecord::Base
 
   def init
     if self.new_record? and self.url[YOUTUBE_ID_REGEX, 1]
+      self.external_id = self.url[YOUTUBE_ID_REGEX, 1]
       info = YoutubeInfo.new(self.url[YOUTUBE_ID_REGEX, 1]).fetch
       self.assign_attributes info
     end
@@ -23,7 +24,8 @@ class Video < ActiveRecord::Base
       title: self.title,
       length: self.length,
       url: self.url,
-      thumbnail_url: self.thumbnail_url
+      thumbnail_url: self.thumbnail_url,
+      external_id: self.external_id
     }
   end
 
