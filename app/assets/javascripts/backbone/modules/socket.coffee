@@ -12,8 +12,10 @@ Zinc.App.module "Socket", (Socket, App) ->
   @addInitializer =>
     App.vent.trigger "init:", @moduleName, arguments
 
-    @socket         = new WebSocketRails "#{location.host}/websocket"
-    @socket.on_open = -> App.vent.trigger "socket_connected", arguments
+    @socket          = new WebSocketRails "#{location.host}/websocket"
+    @socket.on_open  = -> App.vent.trigger "socket_connected", arguments
+    @socket.on_close = -> App.vent.trigger "socket_disconnected", arguments
+    @socket.on_error = -> App.vent.trigger "socket_error", arguments
 
   @on = (event, callback) ->
     @channel.bind event, callback
