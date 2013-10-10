@@ -56,7 +56,7 @@ Zinc.App.module "Chat", (Chat, App) ->
       @chat_view.add_message "chat/removed_video", data
 
     App.vent.on "user_message", (data) =>
-      if App.current_user.get("name") isnt data.user.name
+      if !App.current_user.isNew() && App.current_user.get("name") isnt data.user.name
         name_regex = RegExp App.current_user.get("name")
         data.type = if name_regex.test data.message then "mention" else ""
 
