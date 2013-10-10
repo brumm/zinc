@@ -10,6 +10,11 @@ Zinc.App.module "Chat", (Chat, App) ->
     initialize: ->
       @$chat_list = @$el.find(".chat-list")
 
+    add_message: (template, data) ->
+      @$chat_list.append App.tmpl template, data
+      scrollHeight = @$chat_list[0].scrollHeight
+      @$chat_list.scrollTop(scrollHeight)
+
     focus_send_message: (e) ->
       @$el.find("#send-message").focus()
 
@@ -39,25 +44,23 @@ Zinc.App.module "Chat", (Chat, App) ->
     App.execute "handle", ["user_message", "user_join", "user_leave"]
 
     App.vent.on "user_join", (user) =>
-      @chat_view.$chat_list.append App.tmpl("chat/joined", user)
+      @chat_view.add_message "chat/joined", user
 
     App.vent.on "user_leave", (user) =>
-      @chat_view.$chat_list.append App.tmpl("chat/left", user)
+      @chat_view.add_message "chat/left", user
 
     App.vent.on "video_add", (data) =>
-      @chat_view.$chat_list.append App.tmpl("chat/added_video", data)
+      @chat_view.add_message "chat/added_video", data
 
     App.vent.on "video_remove", (data) =>
-      @chat_view.$chat_list.append App.tmpl("chat/removed_video", data)
+      @chat_view.add_message "chat/removed_video", data
 
     App.vent.on "user_message", (data) =>
       if App.current_user.get("name") isnt data.user.name
         name_regex = RegExp App.current_user.get("name")
         data.type = if name_regex.test data.message then "mention" else ""
 
-      @chat_view.$chat_list.append App.tmpl("chat/message", data)
-      scrollHeight = @chat_view.$chat_list[0].scrollHeight
-      @chat_view.$chat_list.scrollTop(scrollHeight)
+      @chat_view.add_message "chat/message", data
 
   @addFinalizer =>
     App.vent.trigger "bye:", @moduleName, arguments
