@@ -5,9 +5,13 @@ Zinc.App.module "Chat", (Chat, App) ->
     el: ".chat-container"
     events:
       'keydown #send-message': 'send_message'
+      'click': 'focus_send_message'
 
     initialize: ->
       @$chat_list = @$el.find(".chat-list")
+
+    focus_send_message: (e) ->
+      @$el.find("#send-message").focus()
 
     send_message: (e) ->
       $target = $(e.target)
