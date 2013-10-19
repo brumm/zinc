@@ -44,7 +44,7 @@ class Zinc.MediaElement
     window.onYouTubeIframeAPIReady = =>
       @player = new YT.Player element,
         playerVars:
-          controls: 1
+          controls: 0
         videoId: external_id || null
         events:
           onReady: (event) => @do "ready", event
