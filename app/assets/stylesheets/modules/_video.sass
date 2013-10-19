@@ -34,20 +34,29 @@
     left: 20px
     font-size: 24px
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 1), 0px 1px 3px rgba(0, 0, 0, 1)
+    text-decoration: none
+    line-height: 24px * 1.5
 
   .video-progress
     position: absolute
     right: 20px
     left: 20px
     bottom: 20px
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset, 0 1px 1px rgba(255, 255, 255, 0.2)
-    +background-image(linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)))
     height: 15px
     padding: 1px
     border-radius: 30px
-    overflow: hidden
-    .bar
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset, 0 1px 1px rgba(255, 255, 255, 0.2)
+    .video-loaded-bar, .video-playback-bar
+      position: absolute
+      top: 0
+      left: 0
       height: 100%
+      min-width: 16px
       border-radius: inherit
-      box-shadow: 1px 0 0 rgba(0, 0, 0, 0.5)
+    .video-loaded-bar
+      +background-image(linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)))
+      +transition(width 300ms $ease-out-quad)
+    .video-playback-bar
       +background-image(linear-gradient(to bottom, $off-white, darken($off-white, 20%)))
+      +transition(width 300ms $ease-out-quad)
+      z-index: 1

@@ -1,0 +1,6 @@
+.video-overlay
+  %a.video-title{ href: @url }= @title
+  .video-controls
+  .video-progress
+    .video-playback-bar{ style: "width: #{@playback}%" }
+    .video-loaded-bar{ style: "width: #{@loaded}%" }
