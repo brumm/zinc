@@ -2,8 +2,11 @@ Zinc.App.module "User", (User, App) ->
   @startWithParent = false
 
   class User extends Backbone.Model
-    is_role: (role) ->
-      _.contains @get("roles"), role
+    is_role: (roles...) ->
+      bools = for role in roles
+        _.contains @get("roles"), role
+      _.some bools, Boolean
+
     is_logged_in: -> !!@get("id")
 
     make_mod: ->
