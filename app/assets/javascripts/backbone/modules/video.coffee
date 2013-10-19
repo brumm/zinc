@@ -28,7 +28,7 @@ Zinc.App.module "Video", (Video, App) ->
       @media.on 'ready', (time) => @media.play()
 
       @media.on 'tick', (time) =>
-        if App.current_user.is_role("mod", "owner") and time % 3
+        if App.current_user.is_role("mod", "owner") and time % 3 is 0
           App.Room.do "video_sync",
             timestamp: @media.currentTime()
 
@@ -37,14 +37,15 @@ Zinc.App.module "Video", (Video, App) ->
           loaded: @media.loaded() * 100
 
       @media.on 'end', ->
-        App.Room.do "video_mark_seen",
-          video_id: App.Playlist.videos_collection.first().get("id")
+        if App.current_user.is_role("mod", "owner")
+          App.Room.do "video_mark_seen",
+            video_id: App.Playlist.videos_collection.first().get("id")
 
-      # App.Playlist.videos_collection.on "reset", (collection, old_collection) =>
-      #   if collection.length and old_collection?.previousModels[0]?.attributes?.external_id? isnt collection.first().get("external_id")
-      #     @view.model.set(collection.first().toJSON())
-      #     @media.load(collection.first().get("external_id"))
-      #     @media.play()
+      App.vent.on "video_skip", (next_video_id) =>
+        video = App.Playlist.videos_collection.where(external_id: next_video_id)[0]
+        @view.model.set(video.toJSON())
+        @media.load(next_video_id)
+        @media.play()
 
       App.vent.on "video_sync", (timestamp) =>
         if !@media.isPaused and Math.abs(@media.currentTime() - timestamp) > 3
