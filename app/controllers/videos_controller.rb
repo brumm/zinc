@@ -28,6 +28,8 @@ class VideosController < WebsocketRails::BaseController
     room      = Room.friendly.find room_name
     user      = current_user.as_json(resource: room)
 
+    return unless current_user and (current_user.is?(:owner, room) or current_user.has_role?(:admin))
+
     video = room.videos.find(video_id).destroy
 
     if video
@@ -37,6 +39,29 @@ class VideosController < WebsocketRails::BaseController
       })
       broadcast_video_list room_name, room.videos
     end
+  end
+
+  def video_mark_seen
+    # fail fast
+    return unless current_user
+
+    room_name = data[:room]
+    video_id  = data[:video_id]
+    room      = Room.friendly.find room_name
+
+    room.videos.find(video_id).touch(:ended_at)
+
+    broadcast_video_list room_name, room.videos
+  end
+
+  def video_sync
+    # fail fast
+    return unless current_user # && current_user.is?(:owner, room) || current_user.is?(:mod, room)
+
+    room_name = data[:room]
+    timestamp = data[:timestamp]
+
+    WebsocketRails[room_name].trigger(:video_sync, timestamp)
   end
 
   private

@@ -15,5 +15,7 @@ WebsocketRails::EventMap.describe do
 
   subscribe :video_add,           to: VideosController, with_method: :video_add
   subscribe :video_remove,        to: VideosController, with_method: :video_remove
+  subscribe :video_mark_seen,     to: VideosController, with_method: :video_mark_seen
+  subscribe :video_sync,          to: VideosController, with_method: :video_sync
 
 end
