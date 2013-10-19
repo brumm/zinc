@@ -25,6 +25,8 @@ Zinc.App.module "Video", (Video, App) ->
         player: @media
       @view.render()
 
+      @media.on 'ready', (time) => @media.play()
+
       @media.on 'tick', (time) =>
         if App.current_user.is_role("mod", "owner") and time % 3
           App.Room.do "video_sync",
