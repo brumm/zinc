@@ -31,7 +31,7 @@ Zinc.App.module "Playlist", (Playlist, App) ->
 
   @addInitializer =>
     App.vent.trigger "init:", @moduleName, arguments
-    App.execute "handle", ["video_add", "video_remove", "videos_update"]
+    App.execute "handle", ["video_add", "video_remove", "videos_update", "video_sync"]
 
     @videos_collection = new VideosCollection App.options.videos
 

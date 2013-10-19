@@ -8,6 +8,7 @@ Zinc.App.module "Room", (Room, App) ->
     App.Chat.start()
     App.Userlist.start()
     App.Playlist.start()
+    App.Video.start()
     App.SearchBox.start()
 
   @do = (event, data = {}) ->
