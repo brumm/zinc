@@ -10,6 +10,13 @@ Zinc.App.module "Playlist", (Playlist, App) ->
     template: "playlist/video"
     templateHelpers:
       current_user: -> App.current_user
+      secondsToHms: (d) ->
+        d = Number(d)
+        h = Math.floor(d / 3600)
+        m = Math.floor(d % 3600 / 60)
+        s = Math.floor(d % 3600 % 60)
+        ((if h > 0 then h + ":" else "")) + ((if m > 0 then ((if h > 0 and m < 10 then "0" else "")) + m + ":" else "0:")) + ((if s < 10 then "0" else "")) + s
+
     events:
       "click .remove": "video_remove"
 

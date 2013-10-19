@@ -1,5 +1,5 @@
 %a.title{ href: @url }= @title
-%span.muted= "#{@length} seconds"
+%span.duration.muted= @secondsToHms(@length)
 
 - if @current_user().is_role("owner") or @current_user().is_role("mod")
   .remove
