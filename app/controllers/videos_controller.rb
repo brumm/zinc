@@ -52,6 +52,7 @@ class VideosController < WebsocketRails::BaseController
     room.videos.find(video_id).touch(:ended_at)
 
     WebsocketRails[room_name].trigger(:video_skip, room.videos.first.external_id)
+    broadcast_video_list room_name, room.videos
   end
 
   def video_sync
