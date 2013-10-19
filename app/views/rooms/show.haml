@@ -3,10 +3,12 @@
     .video-container
 
       .video-overlay
-        .video-title Spirited Away
+        .video-title
         .video-controls
+
         .video-progress
-          .bar{ style: "width: 40%" }
+          .video-loaded-bar{ style: "width: 0%" }
+          .video-playback-bar{ style: "width: 0%" }
 
       %video#video-player
 
