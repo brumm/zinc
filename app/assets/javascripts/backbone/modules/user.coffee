@@ -4,6 +4,7 @@ Zinc.App.module "User", (User, App) ->
   class User extends Backbone.Model
     is_role: (role) ->
       _.contains @get("roles"), role
+    is_logged_in: -> !!@get("id")
 
     make_mod: ->
       App.Room.do "user_change_role",

@@ -20,11 +20,11 @@ Zinc.App.module "Chat", (Chat, App) ->
 
     send_message: (e) ->
       $target = $(e.target)
-      message = $target.val()
+      message = $target.val().replace(/^\s+|\s+$/g, "")
 
       # enter and message
-      if e.which is 13 and message
-        unless App.current_user?
+      if e.which is 13 and message.length
+        unless App.current_user.is_logged_in()
          window.location = Routes.login_path()
         else
           App.Room.do "user_message",
