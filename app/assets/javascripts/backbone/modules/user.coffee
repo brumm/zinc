@@ -25,7 +25,7 @@ Zinc.App.module "User", (User, App) ->
   @addInitializer (user_data) =>
     App.vent.trigger "init:", @moduleName, arguments
 
-    App.current_user     = if user_data? then new User user_data else user_data
+    App.current_user     = new User user_data
     App.users_collection = new UsersCollection
 
     App.vent.on "users_update", (users) =>
